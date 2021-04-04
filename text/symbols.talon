@@ -28,7 +28,8 @@ empty escaped string:
     "\\'\\'"
     key(left)
     key(left)
-(inside parens | args):
+# previously: (inside parens | args):
+(inside parens):
 	insert("()")
 	key(left)
 inside (squares | list): 
