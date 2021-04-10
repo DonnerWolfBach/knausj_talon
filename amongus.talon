@@ -1,4 +1,3 @@
-<phrase>:skip()
 control mouse: user.mouse_toggle_control_mouse()
 zoom mouse: user.mouse_toggle_zoom_mouse()
 camera overlay: user.mouse_toggle_camera_overlay()
@@ -38,3 +37,6 @@ grid <user.number_key>+:
 grid screen [<number>]:
     user.grid_select_screen(number or 1)
     user.grid_activate()
+
+
+<phrase>:skip()
