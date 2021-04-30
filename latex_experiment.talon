@@ -16,6 +16,7 @@ approximation: "\\approx "
 therefore: "\\Rightarrow "
 exactly if: "\\iff "
 multiply: "\\cdot "
+separator: "\\\\"
 new equation: 
 	"\\[\\]"
 	key(left)
