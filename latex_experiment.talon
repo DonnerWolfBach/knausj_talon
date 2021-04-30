@@ -13,8 +13,12 @@ fraction:
 
 
 approximation: "\\approx "
-therefore: "\\Rightarrow"
+therefore: "\\Rightarrow "
+exactly if: "\\iff "
+multiply: "\\cdot "
 new equation: 
 	"\\[\\]"
 	key(left)
 	key(left)
+
+
