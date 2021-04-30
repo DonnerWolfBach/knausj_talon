@@ -8,7 +8,9 @@ fraction:
 	"\\frac"
 	key(enter)	
 	key(right)
-	key(left) # improvable-> don't use auto complete any more
+	key(left)
+ # improvable-> don't use auto complete any more
+
 
 approximation: "\\approx "
 therefore: "\\Rightarrow"
