@@ -4,6 +4,7 @@ and app.name: Firefox
 os: windows
 and app.exe: firefox.exe
 -
+
 fraction: 
 	"\\frac"
 	key(enter)	
@@ -22,4 +23,4 @@ new equation:
 	key(left)
 	key(left)
 
-
+begin something: "\\begin"
