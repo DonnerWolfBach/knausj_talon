@@ -101,3 +101,6 @@ git commit highlighted:
     insert("git add ")
     edit.paste()
     insert("\ngit commit\n")
+
+git config email: "git config --local user.email"
+git config name: "git config --local user.name "
