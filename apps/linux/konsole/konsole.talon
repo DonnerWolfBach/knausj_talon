@@ -12,6 +12,8 @@ katie: "cd "
 
 launch visual editor: "code . \n"
 
+complete: key(tab)
+
 
 # tabs
 create tab: key(ctrl-shift-t)
