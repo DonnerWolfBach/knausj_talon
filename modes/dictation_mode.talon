@@ -1,4 +1,5 @@
 mode: dictation
+mode: user.german
 -
 ^press <user.keys>$: key("{keys}")
 
