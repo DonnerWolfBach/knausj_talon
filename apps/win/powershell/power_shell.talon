@@ -25,4 +25,3 @@ action(user.file_manager_open_parent):
 
 action(edit.delete_line): key(esc)
 
-launch editor: "gvim . \n"
