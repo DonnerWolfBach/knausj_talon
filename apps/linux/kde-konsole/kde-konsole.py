@@ -14,6 +14,7 @@ directories_to_exclude = {} # is this important?
 
 @ctx.action_class("user")
 class user_actions:
+    # generic_terminal functions implementation
     def terminal_list_directories():
         actions.insert("ls")
         actions.key("enter")
@@ -43,4 +44,21 @@ class user_actions:
         actions.insert("y")
         actions.key("enter")
     
+    # tabs functions implementation
+    # def tap_open():
+    #     actions.key("ctrl-shift-t")
+
+    def tap_previous():
+        actions.insert("shift-left")
+
+    def tap_next():
+        actions.insert("shift-right")
+
+    # def tap_close():
+    #     actions.insert("ctrl-w")
+
+    def tab_jump(number):
+        actions.key("alt-{}".format(number))
+
+
 
