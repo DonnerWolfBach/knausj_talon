@@ -43,20 +43,8 @@ class user_actions:
         actions.key("ctrl-c")
         actions.insert("y")
         actions.key("enter")
-    
-    # tabs functions implementation
-    # def tap_open():
-    #     actions.key("ctrl-shift-t")
 
-    def tap_previous():
-        actions.insert("shift-left")
-
-    def tap_next():
-        actions.insert("shift-right")
-
-    # def tap_close():
-    #     actions.insert("ctrl-w")
-
+    # for rest of tabs see talon file
     def tab_jump(number):
         actions.key("alt-{}".format(number))
 
