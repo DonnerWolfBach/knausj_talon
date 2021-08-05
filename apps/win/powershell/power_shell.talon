@@ -6,6 +6,7 @@ tag(): user.file_manager
 tag(): user.git
 tag(): user.generic_terminal
 tag(): user.kubectl
+tag(): user.anaconda
 tag(): terminal
 
 action(user.file_manager_refresh_title):
