@@ -12,8 +12,8 @@
 #word shell: "shell".
 zoom in: edit.zoom_in()
 zoom out: edit.zoom_out()
-(page | scroll) up: key(pgup)
-(page | scroll) down: key(pgdown)
+scroll up: edit.page_up()
+scroll down: edit.page_down()
 copy that: edit.copy()
 cut that: edit.cut()
 paste that: edit.paste()
@@ -26,6 +26,11 @@ wipe: key(backspace)
 padding:
 	insert("  ") 
 	key(left)
+<<<<<<< HEAD
 slap:
 	edit.line_end()
 	key(enter)
+=======
+slap: edit.line_insert_down()
+
+>>>>>>> knausj_master

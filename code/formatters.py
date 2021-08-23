@@ -175,13 +175,17 @@ all_formatters.update(formatters_words)
 
 mod = Module()
 mod.list("formatters", desc="list of formatters")
-mod.list("prose_formatter", desc="words to start dictating prose, and the formatter they apply")
+mod.list(
+    "prose_formatter",
+    desc="words to start dictating prose, and the formatter they apply",
+)
 
 
 @mod.capture(rule="{self.formatters}+")
 def formatters(m) -> str:
     "Returns a comma-separated string of formatters e.g. 'SNAKE,DUBSTRING'"
     return ",".join(m.formatters_list)
+
 
 @mod.capture(
     # Note that if the user speaks something like "snake dot", it will
@@ -249,7 +253,9 @@ class Actions:
         if actions.user.get_last_phrase() != last_phrase_formatted:
             # The last thing we inserted isn't the same as the last thing we
             # formatted, so abort.
-            logging.warning("formatters_reformat_last(): Last phrase wasn't a formatter!")
+            logging.warning(
+                "formatters_reformat_last(): Last phrase wasn't a formatter!"
+            )
             return
         actions.user.clear_last_phrase()
         actions.user.insert_formatted(last_phrase, formatters)
@@ -257,9 +263,10 @@ class Actions:
     def formatters_reformat_selection(formatters: str) -> str:
         """Reformats the current selection."""
         selected = edit.selected_text()
-        unformatted = re.sub(r"[^a-zA-Z0-9]+", " ", selected).lower()
-        # TODO: Separate out camelcase & studleycase vars
-
+        if not selected:
+            print("Asked to reformat selection, but nothing selected!")
+            return
+        unformatted = unformat_text(selected)
         # Delete separately for compatibility with programs that don't overwrite
         # selected text (e.g. Emacs)
         edit.delete()
@@ -267,20 +274,34 @@ class Actions:
         actions.insert(text)
         return text
 
+    def reformat_text(text: str, formatters: str) -> str:
+        """Reformat the text."""
+        unformatted = unformat_text(text)
+        return actions.user.formatted_text(unformatted, formatters)
+
     def insert_many(strings: List[str]) -> None:
         """Insert a list of strings, sequentially."""
         for string in strings:
             actions.insert(string)
 
+def unformat_text(text: str) -> str:
+    """Remove format from text"""
+    unformatted = re.sub(r"[^a-zA-Z0-9]+", " ", text)
+    # Split on camelCase, including numbes
+    unformatted = re.sub(r"(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])|(?<=[a-zA-Z])(?=[0-9])|(?<=[0-9])(?=[a-zA-Z])", " ", unformatted)
+    # TODO: Separate out studleycase vars
+    return unformatted.lower()
+
 
 ctx.lists["self.formatters"] = formatters_words.keys()
 ctx.lists["self.prose_formatter"] = {
-    "say": "NOOP", "speak": "NOOP",
+    "say": "NOOP",
+    "speak": "NOOP",
     "sentence": "CAPITALIZE_FIRST_WORD",
 }
 
 
-@imgui.open(software=app.platform == "linux")
+@imgui.open()
 def gui(gui: imgui.GUI):
     gui.text("List formatters")
     gui.line()
