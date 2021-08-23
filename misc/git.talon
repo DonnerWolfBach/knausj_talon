@@ -1,5 +1,4 @@
-tag: terminal
-and tag: user.git
+tag: user.git
 -
 # Standard commands
 git add patch: "git add . -p\n"
@@ -102,3 +101,6 @@ git commit highlighted:
     insert("git add ")
     edit.paste()
     insert("\ngit commit\n")
+
+git config email: "git config --local user.email"
+git config name: "git config --local user.name "

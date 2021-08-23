@@ -26,11 +26,5 @@ wipe: key(backspace)
 padding:
 	insert("  ") 
 	key(left)
-<<<<<<< HEAD
-slap:
-	edit.line_end()
-	key(enter)
-=======
 slap: edit.line_insert_down()
 
->>>>>>> knausj_master

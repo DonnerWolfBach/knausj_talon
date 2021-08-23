@@ -114,12 +114,18 @@ ctx = Context()
 modifier_keys = {
     # If you find 'alt' is often misrecognized, try using 'alter'.
 <<<<<<< HEAD
+<<<<<<< HEAD
     # "alt": "alt",  
     'alter': 'alt',
     "command": "cmd",
 =======
     "alt": "alt",  #'alter': 'alt',
 >>>>>>> knausj_master
+=======
+    # "alt": "alt",  
+    'alter': 'alt',
+    "command": "cmd",
+>>>>>>> kubuntu
     "control": "ctrl",  #'troll':   'ctrl',
     "shift": "shift",  #'sky':     'shift',
     "super": "super",
@@ -238,13 +244,10 @@ simple_keys = [
 alternate_keys = {
     "delete": "backspace",
     "forward delete": "delete",
-<<<<<<< HEAD
     'junk': 'backspace',
-=======
     #'junk': 'backspace',
     "page up": "pageup",
     "page down": "pagedown",
->>>>>>> knausj_master
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):

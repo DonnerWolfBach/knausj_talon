@@ -15,6 +15,12 @@ dub arrow: "=>"
 new line: "\\n"
 carriage return: "\\r"
 line feed: "\\r\\n"
+(after | empty) parens:
+    insert("()")
+(after | empty) (squares | list):
+    insert("[]")
+(after | empty) (bracket | braces | curly):    
+    insert("{}")
 empty dubstring:
     '""'
     key(left)
@@ -29,14 +35,14 @@ empty escaped string:
     "\\'\\'"
     key(left)
     key(left)
-# previously: (inside parens | args):
+# previously: (inside parens | args): 
 (inside parens):
 	insert("()")
 	key(left)
 inside (squares | square brackets | list):
 	insert("[]")
 	key(left)
-inside (bracket | braces):
+inside (bracket | braces | curly):
 	insert("{}")
 	key(left)
 inside percent:

@@ -41,6 +41,18 @@ state reduce:
     
 state spread: "..."
 
+
+
 ^funky <user.text>$: user.code_default_function(text)
 ^pro funky <user.text>$: user.code_protected_function(text)
 ^pub funky <user.text>$: user.code_public_function(text)
+
+# custom stuff
+debug log:
+  insert("console.log(`debug: `)")
+  key(left)
+  key(left)
+
+arrow function:
+  insert("()=>{}")
+  key(left)

@@ -32,11 +32,9 @@ settings():
 
     # Mouse grid and friends put the number one on the bottom left (vs on the top left)
     user.grids_put_one_bottom_left = 1
-
-    # The number of lines of command history to display by default
-    user.command_history_display = 10
-
-    # The number of lines of command history to keep in total;
+    # the number of lines of command history to display by default
+    user.command_history_display = 20
+    # the number of lines of command history to keep in total;
     # "command history more" to display all of them, "command history less" to restore
     user.command_history_size = 50
 
