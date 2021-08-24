@@ -50,3 +50,7 @@ funk wrap <user.code_functions>:
 funk wrap <number>:
     user.code_select_function(number - 1, edit.selected_text())
 dock string: user.code_document_string()
+
+# custom 
+(repl | ripple) open: user.code_open_repl()
+(repl | ripple) quit: user.code_quit_repl()

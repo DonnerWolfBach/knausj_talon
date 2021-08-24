@@ -205,6 +205,8 @@ class UserActions:
     def code_state_while():
         actions.insert('while :')
         actions.edit.left()
+    def code_break():
+        actions.insert("break")
     def code_type_class(): actions.auto_insert('class ')
     def code_import():     actions.auto_insert('import ')
     def code_from_import():
@@ -251,6 +253,15 @@ class UserActions:
         actions.user.paste(result)
         actions.edit.left()
         actions.edit.left()
+
+    def code_open_repl():
+        actions.insert("ipython")
+        actions.key("enter")
+
+    def code_quit_repl():
+        actions.insert("quit()")
+        actions.sleep("10ms")
+        actions.key("enter")
 
 
 @mod.action_class
