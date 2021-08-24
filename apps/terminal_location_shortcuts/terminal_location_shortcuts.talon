@@ -16,13 +16,22 @@ go talon user: user.terminal_location_shortcuts_go("Talon User")
 go talon recordings: user.terminal_location_shortcuts_go("Talon Recordings")
 
 # data drive
-go data (drive|home): user.terminal_location_shortcuts_go("")
-go lectures: user.terminal_location_shortcuts_go("")
+go data (drive|home): user.terminal_location_shortcuts_go("Data Home")
+go (lectures|university): user.terminal_location_shortcuts_go("Data Lectures")
 
 
 
 
 # paths 
-# TODO: think about making something generic so that go <location> and <location> path both work
-download path: # TODO
+desk path: user.user.terminal_location_shortcuts_path("TODO")
+docks path: user.user.terminal_location_shortcuts_path("TODO")
+download path: user.terminal_location_shortcuts_path("Downloads")
+pictures path: user.user.terminal_location_shortcuts_path("TODO")
+repositories path: user.user.terminal_location_shortcuts_path("TODO")
+user path: user.user.terminal_location_shortcuts_path("TODO")
 
+talon path: user.user.terminal_location_shortcuts_path("TODO")
+talon user path: user.user.terminal_location_shortcuts_path("TODO")
+talon recordings path: user.user.terminal_location_shortcuts_path("TODO")
+data (drive|home) path: user.user.terminal_location_shortcuts_path("TODO")
+(lectures|university) path: user.user.terminal_location_shortcuts_path("TODO")
