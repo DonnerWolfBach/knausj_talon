@@ -12,6 +12,9 @@ class Actions:
     def terminal_list_all_directories():
         """Lists all directories including hidden"""
 
+    def terminal_list_all_directories_detailed():
+        """Lists all directories including hidden with details"""
+
     def terminal_change_directory(path: str):
         """Lists change directory"""
 

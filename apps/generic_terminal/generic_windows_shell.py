@@ -20,6 +20,10 @@ class Actions:
         actions.insert("ls -force")
         actions.key("enter")
 
+    def terminal_list_all_directories_detailed():
+        """Lists all directories including hidden with details"""
+        actions.app.notify("TODO")
+
     def terminal_change_directory(path: str):
         """Lists change directory"""
         actions.insert("cd {}".format(path))

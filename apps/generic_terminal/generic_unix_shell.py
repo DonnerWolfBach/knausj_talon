@@ -19,7 +19,12 @@ class Actions:
         """Lists all directories including hidden"""
         actions.insert("ls -a")
         actions.key("enter")
-
+        
+    def terminal_list_all_directories_detailed():
+        """Lists all directories including hidden with details"""
+        actions.insert("ls -alh")
+        actions.key("enter")
+        
     def terminal_change_directory(path: str):
         """Lists change directory"""
         actions.insert("cd {}".format(path))
