@@ -112,20 +112,9 @@ def letters(m) -> str:
 
 ctx = Context()
 modifier_keys = {
-    # If you find 'alt' is often misrecognized, try using 'alter'.
-<<<<<<< HEAD
-<<<<<<< HEAD
-    # "alt": "alt",  
+    "alt": "alt",
     'alter': 'alt',
     "command": "cmd",
-=======
-    "alt": "alt",  #'alter': 'alt',
->>>>>>> knausj_master
-=======
-    # "alt": "alt",  
-    'alter': 'alt',
-    "command": "cmd",
->>>>>>> kubuntu
     "control": "ctrl",  #'troll':   'ctrl',
     "shift": "shift",  #'sky':     'shift',
     "super": "super",
