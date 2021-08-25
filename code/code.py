@@ -448,6 +448,12 @@ class Actions:
     def code_document_string():
         """Inserts a document string and positions the cursor appropriately"""
 
+    def code_open_repl():
+        """opens a repl"""
+
+    def code_quit_repl():
+        """ quits the current repl"""
+
 
 def update_library_list_and_freeze():
     global library_list
