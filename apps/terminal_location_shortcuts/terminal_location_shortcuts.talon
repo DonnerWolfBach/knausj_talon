@@ -23,15 +23,16 @@ go (lectures|university): user.terminal_location_shortcuts_go("Data Lectures")
 
 
 # paths 
-desk path: user.user.terminal_location_shortcuts_path("TODO")
-docks path: user.user.terminal_location_shortcuts_path("TODO")
+desk path: user.terminal_location_shortcuts_path("Desktop")
+docks path: user.terminal_location_shortcuts_path("Documents")
 download path: user.terminal_location_shortcuts_path("Downloads")
-pictures path: user.user.terminal_location_shortcuts_path("TODO")
-repositories path: user.user.terminal_location_shortcuts_path("TODO")
-user path: user.user.terminal_location_shortcuts_path("TODO")
+pictures path: user.terminal_location_shortcuts_path("Pictures")
+repositories path: user.terminal_location_shortcuts_path("Repositories")
+user path: user.terminal_location_shortcuts_path("User")
 
-talon path: user.user.terminal_location_shortcuts_path("TODO")
-talon user path: user.user.terminal_location_shortcuts_path("TODO")
-talon recordings path: user.user.terminal_location_shortcuts_path("TODO")
-data (drive|home) path: user.user.terminal_location_shortcuts_path("TODO")
-(lectures|university) path: user.user.terminal_location_shortcuts_path("TODO")
+talon path: user.terminal_location_shortcuts_path("Talon Home")
+talon user path: user.terminal_location_shortcuts_path("Talon User")
+talon recordings path: user.terminal_location_shortcuts_path("Talon Recordings")
+
+data (drive|home) path: user.terminal_location_shortcuts_path("Data Home")
+(lectures|university) path: user.terminal_location_shortcuts_path("Data Lectures")
