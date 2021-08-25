@@ -11,7 +11,7 @@ go repositories: user.terminal_location_shortcuts_go("Repositories")
 go user: user.terminal_location_shortcuts_go("User")
 
 # talon locations
-go talon: user.terminal_location_shortcuts_go("Talon Home")
+^go talon$: user.terminal_location_shortcuts_go("Talon Home")
 go talon user: user.terminal_location_shortcuts_go("Talon User")
 go talon recordings: user.terminal_location_shortcuts_go("Talon Recordings")
 
