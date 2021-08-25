@@ -16,4 +16,5 @@ rerun [<user.text>]: user.terminal_rerun_search(text or "")
 rerun search: user.terminal_rerun_search("")
 kill all: user.terminal_kill_all()
 
-complete: key(tab) # because it's likely the same everywhere
+complete: key(tab) 
+# because it's likely the same everywhere
