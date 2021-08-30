@@ -16,6 +16,8 @@ tag(): user.tabs
 # TODO: file_manager
 tag(): user.splits
 
+tag(): user.terminal_location_shortcuts
+
 settings open : key(ctrl-,)
 focus left: key(alt-left)
 focus right: key(alt-right)
