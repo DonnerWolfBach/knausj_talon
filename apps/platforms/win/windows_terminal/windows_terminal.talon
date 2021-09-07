@@ -23,4 +23,5 @@ focus left: key(alt-left)
 focus right: key(alt-right)
 focus up: key(alt-up)
 focus down: key(alt-down)
-term menu: key(ctrl-shift-f1) # doesn't seem to work-> TODO: fix or remove
+term menu: key(ctrl-shift-f1) 
+# doesn't seem to work-> TODO: fix or remove
