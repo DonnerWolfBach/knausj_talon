@@ -10,7 +10,7 @@ tag(): user.generic_windows_shell
 # you can deactivate them if you do not use the application
 tag(): user.git
 tag(): user.anaconda
-# tag(): user.kubectl
+tag(): user.kubectl
     
 tag(): user.tabs
 # TODO: file_manager
@@ -25,3 +25,6 @@ focus up: key(alt-up)
 focus down: key(alt-down)
 term menu: key(ctrl-shift-f1) 
 # doesn't seem to work-> TODO: fix or remove
+
+# to open specific terminal profiles
+profile <number_small>: key("ctrl-shift-{number_small}")
