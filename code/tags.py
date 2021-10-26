@@ -11,7 +11,7 @@ tagList = [
     "ida",
     "tabs",
     "generic_terminal",
-    "kubectl"
+    "kubectl",
     "generic_windows_shell",
     "generic_unix_shell",
     "terminal_location_shortcuts",
