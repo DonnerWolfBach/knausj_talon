@@ -12,6 +12,7 @@ tag(): user.git
 tag(): user.anaconda
 tag(): user.kubectl
 tag(): user.docker
+tag(): user.npm
     
 tag(): user.tabs
 # TODO: file_manager

@@ -5,7 +5,7 @@ app: windows_command_processor
 app: windows_terminal
 and win.title: /Command Prompt/
 """
-ctx.tags = ['user.file_manager','user.generic_terminal','user.git','user.kubectl','user.docker','terminal']
+ctx.tags = ['user.file_manager','user.generic_terminal','user.git','user.kubectl','user.npm','user.docker','terminal']
 
 @ctx.action_class('user')
 class UserActions:
