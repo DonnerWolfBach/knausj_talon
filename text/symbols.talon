@@ -15,6 +15,8 @@ dub arrow: "=>"
 new line: "\\n"
 carriage return: "\\r"
 line feed: "\\r\\n"
+(after | empty) dollar:
+    insert("$$")
 (after | empty) parens:
     insert("()")
 (after | empty) (squares | list):
@@ -36,7 +38,10 @@ empty escaped string:
     key(left)
     key(left)
 # previously: (inside parens | args): 
-(inside parens):
+inside dollar:
+    insert("$$")
+    key(left)
+inside parens:
 	insert("()")
 	key(left)
 inside (squares | square brackets | list):
