@@ -9,14 +9,14 @@ settings():
 # TODO: decide wether to remove this 
 
 # zeichen
-neue Zeile: "\n"
-Komma: ", "
-Punkt: "."
-Ausrufezeichen: "!"
-Fragezeichen: "?"
-Klammer auf: "("
-Klammer zu: ")"
-Leerzeichen: " "
+# neue Zeile: "\n"
+# Komma: ", "
+# Punkt: "."
+# Ausrufezeichen: "!"
+# Fragezeichen: "?"
+# Klammer auf: "("
+# Klammer zu: ")"
+# Leerzeichen: " "
 
 # navigation
 gehe zum Ende der Zeile: edit.line_end()
