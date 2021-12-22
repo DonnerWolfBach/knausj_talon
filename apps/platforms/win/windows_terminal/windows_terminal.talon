@@ -21,12 +21,29 @@ tag(): user.splits
 tag(): user.terminal_location_shortcuts
 
 settings open : key(ctrl-,)
-focus left: key(alt-left)
-focus right: key(alt-right)
-focus up: key(alt-up)
-focus down: key(alt-down)
-term menu: key(ctrl-shift-f1) 
-# doesn't seem to work-> TODO: fix or remove
+focus left: key(ctrl-alt-shift-left)
+focus right: key(ctrl-alt-shift-right)
+focus up: key(ctrl-alt-shift-up)
+focus down: key(ctrl-alt-shift-down)
+split right: key(alt-shift-=)
+split down: key(alt-shift--)
+term menu: key(ctrl-shift-f1)
+
+run last: key(up enter)
+kill all:
+    key(ctrl-c)
+    insert("y")
+    key(enter)
+    
+
+find it:
+    edit.find()
+
+find it <phrase>$:
+    # handle consecutive finds by first escaping out of any previous one
+    key(escape)
+    # make it so
+    edit.find("{phrase}\n")
 
 # to open specific terminal profiles
 profile <number_small>: key("ctrl-shift-{number_small}")

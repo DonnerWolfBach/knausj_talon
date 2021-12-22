@@ -18,3 +18,8 @@ kill all: user.terminal_kill_all()
 
 complete: key(tab) 
 # because it's likely the same everywhere
+
+copy paste:
+    edit.copy()
+    sleep(50ms)
+    edit.paste()
