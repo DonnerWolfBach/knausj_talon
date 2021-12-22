@@ -18,3 +18,6 @@ mark inbox channel read: user.discord_mark_inbox_read()
 [toggle] (deafen | undeafen): user.discord_deafen()
 answer call: user.discord_answer_call()
 decline call: user.discord_decline_call()
+
+# avrae dice bot
+roll <number> dice <number>: insert("!r {number_1}d{number_2}\n")
