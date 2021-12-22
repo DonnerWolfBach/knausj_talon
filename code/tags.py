@@ -7,8 +7,12 @@ tagList = [
     "disassembler",
     "gdb",
     "git",  # commandline tag for git commands
+    "docker",
     "ida",
     "tabs",
+    "generic_terminal",
+    "kubectl",
+    "npm",
     "generic_windows_shell",
     "generic_unix_shell",
     "terminal_location_shortcuts",

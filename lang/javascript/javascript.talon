@@ -49,7 +49,7 @@ state spread: "..."
 
 # custom stuff
 debug log:
-  insert("console.log(`debug: `)")
+  insert("console.log(`debug: `);")
   key(left)
   key(left)
 
