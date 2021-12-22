@@ -18,7 +18,7 @@ go talon recordings: user.terminal_location_shortcuts_go("Talon Recordings")
 # data drive
 go data (drive|home): user.terminal_location_shortcuts_go("Data Home")
 go (lectures|university): user.terminal_location_shortcuts_go("Data Lectures")
-
+go (data ebook|ebook): user.terminal_location_shortcuts_go("Data Ebook")
 
 
 
@@ -36,3 +36,4 @@ talon recordings path: user.terminal_location_shortcuts_path("Talon Recordings")
 
 data (drive|home) path: user.terminal_location_shortcuts_path("Data Home")
 (lectures|university) path: user.terminal_location_shortcuts_path("Data Lectures")
+(data ebook|ebook) path: user.terminal_location_shortcuts_path("Data Ebook")
