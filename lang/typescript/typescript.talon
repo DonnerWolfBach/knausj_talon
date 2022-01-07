@@ -57,3 +57,5 @@ debug log:
 arrow function:
   insert("()=>{}")
   key(left)
+  
+tag(): user.javascript
