@@ -30,10 +30,6 @@ split down: key(alt-shift--)
 term menu: key(ctrl-shift-f1)
 
 run last: key(up enter)
-kill all:
-    key(ctrl-c)
-    insert("y")
-    key(enter)
     
 
 find it:
