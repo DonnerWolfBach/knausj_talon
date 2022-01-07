@@ -20,6 +20,7 @@ ctx.lists["user.code_functions"] = {
     "split": "split",
     "string": "str",
     "update": "update",
+    "type": "type",
 }
 
 """a set of fields used in python docstrings that will follow the
@@ -202,6 +203,7 @@ class UserActions:
 
     def code_break():
         actions.insert("break")
+    def code_next(): actions.insert("continue")
     
     def code_define_class(): actions.auto_insert('class ')
     def code_import():     actions.auto_insert('import ')
