@@ -31,3 +31,20 @@ gehe zum Beginn der Zeile: edit.line_start()
     mode.enable("command")
     mode.disable("user.gdb")
 
+# exiting dragon-german mode (alias)
+^Befehl modus$:
+	user.engine_mimic("geh schlafen")
+    mode.disable("sleep")
+    mode.disable("dictation")
+    mode.disable("user.german")
+    mode.enable("command")
+    mode.disable("user.gdb")
+
+# exiting dragon-german mode (alias)
+^Befehlsmodus$:
+	user.engine_mimic("geh schlafen")
+    mode.disable("sleep")
+    mode.disable("dictation")
+    mode.disable("user.german")
+    mode.enable("command")
+    mode.disable("user.gdb")
