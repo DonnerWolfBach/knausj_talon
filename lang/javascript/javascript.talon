@@ -40,16 +40,13 @@ state async: "async "
 state await: "await "
 
 state map:
-    insert(".map()")
-    key(left)
+    user.insert_between(".map(", ")")
 
 state filter:
-    insert(".filter()")
-    key(left)
+    user.insert_between(".filter(", ")")
 
 state reduce:
-    insert(".reduce()")
-    key(left)
+    user.insert_between(".reduce(", ")")
 
 state spread: "..."
 
@@ -70,5 +67,4 @@ arrow function:
   key(left)
   
 from import:
-    insert(' from  ""')
-    key("left")
+    user.insert_between(' from  "', '"')
