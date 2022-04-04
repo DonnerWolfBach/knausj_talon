@@ -53,3 +53,27 @@ import <user.code_libraries>:
     key(end enter)
 
 from import: user.insert_between("from ", " import ")
+
+# custom stuff (TODO: clean up)
+
+insert debugger: "import pdb; pdb.set_trace()"
+
+import numpy: "import numpy as np\n"
+import pandas: "import pandas as pd\n"
+
+import logging (basics | stuff): 
+    """from logging import DEBUG,info,debug,basicConfig
+
+    basicConfig(level=DEBUG)"""
+
+debug logging: user.insert_between("debug(f\"","\")")
+info logging: user.insert_between("info(f\"","\")")
+
+import (unittest | unit test):
+    """import unittest
+
+    class TestStringMethods(unittest.TestCase):
+    
+        def test_upper(self):
+            self.assertEqual('foo'.upper(), 'FOO')
+    """
