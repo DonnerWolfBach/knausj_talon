@@ -230,15 +230,6 @@ class UserActions:
         actions.user.paste(result)
         actions.edit.left()
         actions.edit.left()
-
-    def code_open_repl():
-        actions.insert("ipython")
-        actions.key("enter")
-
-    def code_quit_repl():
-        actions.insert("quit()")
-        actions.sleep("10ms")
-        actions.key("enter")
         
     def code_insert_type_annotation(type: str):
         actions.insert(f": {type}")
