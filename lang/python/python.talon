@@ -60,6 +60,8 @@ insert debugger: "import pdb; pdb.set_trace()"
 
 import numpy: "import numpy as np\n"
 import pandas: "import pandas as pd\n"
+import matplotlib: "import matplotlib.pyplot as plt\n"
+
 
 import logging (basics | stuff): 
     """from logging import DEBUG,info,debug,basicConfig
