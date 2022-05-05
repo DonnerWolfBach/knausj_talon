@@ -79,3 +79,5 @@ import (unittest | unit test):
         def test_upper(self):
             self.assertEqual('foo'.upper(), 'FOO')
     """
+
+format string: user.insert_between("f\"","\"")
