@@ -63,6 +63,16 @@ import pandas: "import pandas as pd\n"
 import matplotlib: "import matplotlib.pyplot as plt\n"
 
 
+
+# timeit stuff
+import (time it| benchmarking): "import timeit\n"
+basic (time it| benchmarking): user.insert_between("print(timeit.timeit(\"","\", globals=locals()))")
+
+single (time it| benchmarking): 
+    insert("repetitions = 1\n")
+    user.insert_between("print(timeit.timeit(\"","\", globals=locals(),number=repetitions)/repetitions)")
+
+
 import logging (basics | stuff): 
     """from logging import DEBUG,info,debug,basicConfig
 
