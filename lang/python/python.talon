@@ -62,6 +62,8 @@ import numpy: "import numpy as np\n"
 import pandas: "import pandas as pd\n"
 import matplotlib: "import matplotlib.pyplot as plt\n"
 
+matplotlib subplots: "fig, ax = plt.subplots()"
+
 
 
 # timeit stuff
