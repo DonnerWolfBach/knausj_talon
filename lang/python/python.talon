@@ -76,9 +76,11 @@ single (time it| benchmarking):
 
 
 import logging (basics | stuff): 
-    """from logging import DEBUG,info,debug,basicConfig
+    """from logging import info,debug
+    import logging
+    # logging.setLevel to reset level during runtime
 
-    basicConfig(level=DEBUG)"""
+    logging.basicConfig(level=logging.DEBUG)"""
 
 debug logging: user.insert_between("debug(f\"","\")")
 info logging: user.insert_between("info(f\"","\")")
