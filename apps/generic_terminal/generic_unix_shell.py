@@ -22,7 +22,7 @@ class Actions:
         
     def terminal_list_all_directories_detailed():
         """Lists all directories including hidden with details"""
-        actions.insert("ls -alh")
+        actions.insert("ls -Alh")
         actions.key("enter")
         
     def terminal_change_directory(path: str):
