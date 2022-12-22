@@ -23,3 +23,7 @@ copy paste:
     edit.copy()
     sleep(50ms)
     edit.paste()
+
+
+pipe to (clipboard|clip): user.terminal_pipe_to_clipboard() 
+# TODO: implement for windows

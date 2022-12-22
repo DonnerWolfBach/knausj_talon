@@ -55,3 +55,7 @@ class Actions:
         actions.key("ctrl-c")
         actions.insert("y")
         actions.key("enter")
+
+    def terminal_pipe_to_clipboard():
+        """Adds the command that pipes a commands output into the clipboard."""
+        actions.insert("| xsel -ib")
