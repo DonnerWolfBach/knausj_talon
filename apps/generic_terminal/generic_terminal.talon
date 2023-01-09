@@ -26,5 +26,4 @@ copy paste:
 
 
 pipe to (clipboard|clip): user.terminal_pipe_to_clipboard() 
-# TODO: implement for windows
 
