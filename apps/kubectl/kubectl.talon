@@ -21,6 +21,8 @@ cube auto scale:     "kubectl autoscale "
 
 cube certificate:    "kubectl certificate "
 cube top:            "kubectl top "
+cube top node:       "kubectl top node "
+cube top pod:       "kubectl top pod "
 cube drain:          "kubectl drain "
 cube taint:          "kubectl taint "
 cube (cord | cordon): "kubectl cordon "
@@ -51,7 +53,7 @@ cube completion:   "kubectl completion "
 cube (interface | API):   "kubectl api "
 cube interface resources: "kubectl api-resources "
 cube interface versions:  "kubectl api-versions "
-cube config:       "kubectl config "
+cube (config | configuration):       "kubectl config "
 cube help:         "kubectl help "
 cube plugin:       "kubectl plugin "
 cube version:      "kubectl version "
@@ -59,6 +61,7 @@ cube version:      "kubectl version "
 cube {user.kubectl_action} [{user.kubectl_object}]:
     insert("kubectl {kubectl_action} ")
     insert(kubectl_object or "")
+    insert(" ")
 
 cube detach:
     key("ctrl-p")
