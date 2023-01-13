@@ -10,11 +10,15 @@ tag(): user.generic_windows_shell
 # you can deactivate them if you do not use the application
 tag(): user.git
 tag(): user.anaconda
-# tag(): user.kubectl
+tag(): user.kubectl
+tag(): user.docker
+tag(): user.npm
 
 tag(): user.tabs
 # TODO: file_manager
 tag(): user.splits
+
+tag(): user.terminal_location_shortcuts
 
 settings open: key(ctrl-,)
 focus left: key(ctrl-alt-shift-left)
@@ -30,3 +34,6 @@ find it <phrase>$:
     key(escape)
     # make it so
     edit.find("{phrase}\n")
+
+# to open specific terminal profiles
+profile <number_small>: key("ctrl-shift-{number_small}")
