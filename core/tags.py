@@ -9,7 +9,7 @@ tagList = [
     "docker",
     "ida",
     "tabs",
-    "generic_terminal", # TODO: check wether I can remove that
+    "generic_terminal",  # TODO: check wether I can remove that
     "kubectl",
     "npm",
     "generic_windows_shell",

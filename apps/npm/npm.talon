@@ -10,5 +10,4 @@ node pack run: "npm run "
 node pack run build: "npm run build "
 node pack run test: "npm run test "
 
-
-node pack (audit|vulnerabilities) : "npm audit "
+node pack (audit | vulnerabilities): "npm audit "

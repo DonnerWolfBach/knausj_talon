@@ -32,6 +32,5 @@ class Actions:
     def terminal_kill_all():
         """kills the running command"""
 
-
     def terminal_pipe_to_clipboard():
         """Adds the command that pipes a commands output into the clipboard."""

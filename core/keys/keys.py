@@ -127,7 +127,7 @@ def letters(m) -> str:
 ctx = Context()
 modifier_keys = {
     "alt": "alt",
-    'alter': 'alt',
+    "alter": "alt",
     "command": "cmd",
     "control": "ctrl",  #'troll':   'ctrl',
     "shift": "shift",  #'sky':     'shift',
@@ -214,7 +214,7 @@ symbol_key_words = {
     # Currencies
     "dollar": "$",
     "pound": "£",
-    "euro": "€"
+    "euro": "€",
 }
 
 # make punctuation words also included in {user.symbol_keys}
@@ -234,7 +234,7 @@ simple_keys = [
     "enter",
     "escape",
     "home",
-#    "insert",
+    #    "insert",
     "pagedown",
     "pageup",
     "space",
@@ -244,7 +244,7 @@ simple_keys = [
 alternate_keys = {
     "wipe": "backspace",
     "delete": "backspace",
-    'junk': 'backspace',
+    "junk": "backspace",
     "forward delete": "delete",
     "page up": "pageup",
     "page down": "pagedown",

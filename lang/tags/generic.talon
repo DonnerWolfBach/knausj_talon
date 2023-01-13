@@ -4,8 +4,8 @@ block: user.code_block()
 
 #todo should we have a keyword list? type list capture? stick with "word"?
 #state in: insert(" in ")
-is not (none|null): user.code_is_not_null()
-is (none|null): user.code_is_null()
+is not (none | null): user.code_is_not_null()
+is (none | null): user.code_is_null()
 #todo: types?
 #word (dickt | dictionary): user.code_type_dictionary()
 state if: user.code_state_if()
@@ -41,16 +41,12 @@ state false: user.code_false()
 
 # show and print functions and libraries
 toggle funk: user.code_toggle_functions()
-funk <user.code_functions>:
-    user.code_insert_function(code_functions, "")
-funk cell <number>:
-    user.code_select_function(number - 1, "")
+funk <user.code_functions>: user.code_insert_function(code_functions, "")
+funk cell <number>: user.code_select_function(number - 1, "")
 funk wrap <user.code_functions>:
     user.code_insert_function(code_functions, edit.selected_text())
-funk wrap <number>:
-    user.code_select_function(number - 1, edit.selected_text())
+funk wrap <number>: user.code_select_function(number - 1, edit.selected_text())
 dock string: user.code_document_string()
-
 
 # for annotating function parameters
 is type {user.code_type}: user.code_insert_type_annotation(code_type)

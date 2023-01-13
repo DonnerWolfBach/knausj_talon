@@ -93,21 +93,23 @@ def every_word(word_func):
     """Apply one function to every word."""
     return lambda i, word, _: word_func(word)
 
-def transform_to_spongebob_case_alternative(some_integer : int, string : str, yet_another_parameter) -> str:
+
+def transform_to_spongebob_case_alternative(
+    some_integer: int, string: str, yet_another_parameter
+) -> str:
     """a more concise alternative to the first implementation"""
     print(f"debug: string={string}")
     print(f"debug: some_integer={some_integer})")
     print(f"debug: yet_another_parameter={yet_another_parameter})")
     string = list(string)
-    for index,character in enumerate(string):
+    for index, character in enumerate(string):
         # ignore non letter characters
         if character.isalpha():
             if index % 2 == 0:
                 string[index] = character.upper()
             else:
-                string[index] = character.lower()                
+                string[index] = character.lower()
     return "".join(string)
-
 
 
 formatters_dict = {
@@ -148,9 +150,7 @@ formatters_dict = {
         if i == 0 or word not in words_to_keep_lowercase
         else word,
     ),
-    "SPONGEBOB_CASE": (
-        SEP, transform_to_spongebob_case_alternative
-    )
+    "SPONGEBOB_CASE": (SEP, transform_to_spongebob_case_alternative),
 }
 
 # This is the mapping from spoken phrases to formatters
@@ -171,7 +171,6 @@ formatters_words = {
     "spongebob": formatters_dict["SPONGEBOB_CASE"],
     "string": formatters_dict["SINGLE_QUOTED_STRING"],
     "title": formatters_dict["CAPITALIZE_ALL_WORDS"],
-
 }
 
 all_formatters = {}

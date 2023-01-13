@@ -39,7 +39,5 @@ anaconda server: "conda server "
 anaconda skeleton: "conda skeleton "
 anaconda verify: "conda verify "
 
-
 # find better place
 jupiter notebook start: "jupyter notebook"
-

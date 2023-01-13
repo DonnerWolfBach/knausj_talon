@@ -70,12 +70,12 @@ matplotlib subplots: "fig, ax = plt.subplots()"
 import (time it| benchmarking): "import timeit\n"
 basic (time it| benchmarking): user.insert_between("print(timeit.timeit(\"","\", globals=locals()))")
 
-single (time it| benchmarking): 
+single (time it| benchmarking):
     insert("repetitions = 1\n")
     user.insert_between("print(timeit.timeit(\"","\", globals=locals(),number=repetitions)/repetitions)")
 
 
-import logging (basics | stuff): 
+import logging (basics | stuff):
     """from logging import info,debug
     import logging
     # logging.setLevel to reset level during runtime
@@ -89,7 +89,7 @@ import (unittest | unit test):
     """import unittest
 
     class TestStringMethods(unittest.TestCase):
-    
+
         def test_upper(self):
             self.assertEqual('foo'.upper(), 'FOO')
     """

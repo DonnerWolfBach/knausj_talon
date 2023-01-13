@@ -157,7 +157,6 @@ fold five: user.vscode("editor.foldLevel5")
 fold six: user.vscode("editor.foldLevel6")
 fold seven: user.vscode("editor.foldLevel7")
 
-
 # Git / Github (not using verb-noun-adjective pattern, mirroring terminal commands.)
 # I removed the git stuff because I don't use it.
 

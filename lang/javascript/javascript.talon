@@ -52,13 +52,12 @@ state spread: "..."
 
 # custom stuff
 debug log:
-  insert("console.log(`debug: `);")
-  key(left)
-  key(left)
+    insert("console.log(`debug: `);")
+    key(left)
+    key(left)
 
 arrow function:
-  insert("()=>{}")
-  key(left)
-  
-from import:
-    user.insert_between(' from  "', '"')
+    insert("()=>{}")
+    key(left)
+
+from import: user.insert_between(' from  "', '"')

@@ -341,7 +341,7 @@ class UserActions:
         actions.user.paste(result)
         actions.edit.left()
         actions.edit.left()
-        
+
     def code_insert_type_annotation(type: str):
         actions.insert(f": {type}")
 

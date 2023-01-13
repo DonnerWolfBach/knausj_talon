@@ -19,7 +19,7 @@ rerun [<user.text>]: user.terminal_rerun_search(text or "")
 rerun search: user.terminal_rerun_search("")
 kill all: user.terminal_kill_all()
 
-complete: key(tab) 
+complete: key(tab)
 # because it's likely the same everywhere
 
 copy paste:
@@ -27,6 +27,4 @@ copy paste:
     sleep(50ms)
     edit.paste()
 
-
-pipe to (clipboard|clip): user.terminal_pipe_to_clipboard() 
-
+pipe to (clipboard | clip): user.terminal_pipe_to_clipboard()

@@ -164,7 +164,7 @@ abbreviations = {
     "operating system": "os",
     "original": "orig",
     "package": "pkg",
-    "pandas":"pd",
+    "pandas": "pd",
     "parameter": "param",
     "parameters": "params",
     "pico second": "ps",

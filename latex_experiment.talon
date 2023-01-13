@@ -5,22 +5,21 @@ os: windows
 and app.exe: firefox.exe
 -
 
-fraction: 
-	"\\frac"
-	key(enter)	
-	key(right)
-	key(left)
- # improvable-> don't use auto complete any more
-
+fraction:
+    "\\frac"
+    key(enter)
+    key(right)
+    key(left)
+# improvable-> don't use auto complete any more
 
 approximation: "\\approx "
 therefore: "\\Rightarrow "
 exactly if: "\\iff "
 multiply: "\\cdot "
 separator: "\\\\"
-new equation: 
-	"\\[\\]"
-	key(left)
-	key(left)
+new equation:
+    "\\[\\]"
+    key(left)
+    key(left)
 
 begin something: "\\begin"

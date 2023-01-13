@@ -1,6 +1,6 @@
 os: linux
 and app.name: Standard Notes
-- 
+-
 # these shortcuts are for the bold editor
 Remove format: key(ctrl-m)
 bold: key(ctrl-b)
