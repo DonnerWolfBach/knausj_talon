@@ -176,5 +176,5 @@ cut line: user.cut_line()
     edit.paste()
 
 # duplication
-clone that: edit.selection_clone()
-clone line: edit.line_clone()
+(clone | duplicate) that: edit.selection_clone()
+(clone | duplicate) line: edit.line_clone()
