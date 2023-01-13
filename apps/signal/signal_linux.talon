@@ -1,6 +1,7 @@
 app: signal
 -
 show shortcuts: key("ctrl-/")
+tag(): user.emoji
 
 # Note that the order below matches Keyboard Shortcuts listings
 

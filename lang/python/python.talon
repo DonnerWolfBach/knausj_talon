@@ -53,3 +53,45 @@ import <user.code_libraries>:
     key(end enter)
 
 from import: user.insert_between("from ", " import ")
+
+# custom stuff (TODO: clean up)
+
+insert debugger: "import pdb; pdb.set_trace()"
+
+import numpy: "import numpy as np\n"
+import pandas: "import pandas as pd\n"
+import matplotlib: "import matplotlib.pyplot as plt\n"
+
+matplotlib subplots: "fig, ax = plt.subplots()"
+
+
+
+# timeit stuff
+import (time it| benchmarking): "import timeit\n"
+basic (time it| benchmarking): user.insert_between("print(timeit.timeit(\"","\", globals=locals()))")
+
+single (time it| benchmarking): 
+    insert("repetitions = 1\n")
+    user.insert_between("print(timeit.timeit(\"","\", globals=locals(),number=repetitions)/repetitions)")
+
+
+import logging (basics | stuff): 
+    """from logging import info,debug
+    import logging
+    # logging.setLevel to reset level during runtime
+
+    logging.basicConfig(level=logging.DEBUG)"""
+
+debug logging: user.insert_between("debug(f\"","\")")
+info logging: user.insert_between("info(f\"","\")")
+
+import (unittest | unit test):
+    """import unittest
+
+    class TestStringMethods(unittest.TestCase):
+    
+        def test_upper(self):
+            self.assertEqual('foo'.upper(), 'FOO')
+    """
+
+format string: user.insert_between("f\"","\"")

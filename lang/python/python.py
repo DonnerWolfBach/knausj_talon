@@ -18,6 +18,7 @@ ctx.lists["user.code_common_function"] = {
     "split": "split",
     "string": "str",
     "update": "update",
+    "type": "type",
 }
 
 """a set of fields used in python docstrings that will follow the
@@ -340,7 +341,7 @@ class UserActions:
         actions.user.paste(result)
         actions.edit.left()
         actions.edit.left()
-
+        
     def code_insert_type_annotation(type: str):
         actions.insert(f": {type}")
 

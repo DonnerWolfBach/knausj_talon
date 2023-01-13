@@ -126,8 +126,9 @@ def letters(m) -> str:
 
 ctx = Context()
 modifier_keys = {
-    # If you find 'alt' is often misrecognized, try using 'alter'.
-    "alt": "alt",  #'alter': 'alt',
+    "alt": "alt",
+    'alter': 'alt',
+    "command": "cmd",
     "control": "ctrl",  #'troll':   'ctrl',
     "shift": "shift",  #'sky':     'shift',
     "super": "super",
@@ -195,16 +196,10 @@ symbol_key_words = {
     "left paren": "(",
     "R paren": ")",
     "right paren": ")",
-    "brace": "{",
-    "left brace": "{",
-    "brack": "{",
-    "bracket": "{",
-    "left bracket": "{",
-    "r brace": "}",
-    "right brace": "}",
-    "r brack": "}",
-    "r bracket": "}",
-    "right bracket": "}",
+    "curly": "{",
+    "left curly": "{",
+    "R curly": "}",
+    "right curly": "}",
     "angle": "<",
     "left angle": "<",
     "less than": "<",
@@ -242,7 +237,7 @@ simple_keys = [
     "enter",
     "escape",
     "home",
-    "insert",
+#    "insert",
     "pagedown",
     "pageup",
     "space",
@@ -252,6 +247,11 @@ simple_keys = [
 alternate_keys = {
     "wipe": "backspace",
     "delete": "backspace",
+<<<<<<< HEAD:core/keys/keys.py
+=======
+    "forward delete": "delete",
+    'junk': 'backspace',
+>>>>>>> master:code/keys.py
     #'junk': 'backspace',
     "forward delete": "delete",
     "page up": "pageup",

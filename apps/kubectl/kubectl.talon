@@ -19,18 +19,23 @@ cube rolling update: "kubectl rolling-update "
 cube scale: "kubectl scale "
 cube auto scale: "kubectl autoscale "
 
-cube certificate: "kubectl certificate "
-cube top: "kubectl top "
-cube drain: "kubectl drain "
-cube taint: "kubectl taint "
+cube certificate:    "kubectl certificate "
+cube top:            "kubectl top "
+cube top node:       "kubectl top node "
+cube top pod:        "kubectl top pod "
+cube drain:          "kubectl drain "
+cube taint:          "kubectl taint "
 cube (cord | cordon): "kubectl cordon "
 cube (uncord | uncordon): "kubectl uncordon "
 cube cluster (info | information): "kubectl cluster-info "
 
-cube describe: "kubectl describe "
-cube logs: "kubectl logs "
-cube attach: "kubectl attach "
-cube exec: "kubectl exec "
+cube describe:     "kubectl describe "
+cube logs:         "kubectl logs "
+cube attach:       "kubectl attach "
+cube exec:         
+    user.insert_between("kubectl exec "," -- ")
+
+
 cube port forward: "kubectl port-forward "
 cube proxy: "kubectl proxy "
 cube copy: "kubectl cp "
@@ -50,17 +55,35 @@ cube completion: "kubectl completion "
 
 cube (interface | API): "kubectl api "
 cube interface resources: "kubectl api-resources "
+<<<<<<< HEAD
 cube interface versions: "kubectl api-versions "
 cube config: "kubectl config "
 cube help: "kubectl help "
 cube plugin: "kubectl plugin "
 cube version: "kubectl version "
+=======
+cube interface versions:  "kubectl api-versions "
+cube (config | configuration):       "kubectl config "
+cube help:         "kubectl help "
+cube plugin:       "kubectl plugin "
+cube version:      "kubectl version "
+>>>>>>> master
 
 cube {user.kubectl_action} [{user.kubectl_object}]:
     insert("kubectl {kubectl_action} ")
     insert(kubectl_object or "")
+    insert(" ")
 
 cube detach:
     key("ctrl-p")
     key("ctrl-q")
+<<<<<<< HEAD
 cube shell: user.insert_between("kubectl exec -it ", " -- /bin/bash")
+=======
+
+cube shell:
+    user.insert_between("kubectl exec -it ", " -- /bin/sh")
+
+cube bash:
+    user.insert_between("kubectl exec -it ", " -- /bin/bash")
+>>>>>>> master

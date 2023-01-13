@@ -11,6 +11,9 @@ class Actions:
     def terminal_list_all_directories():
         """Lists all directories including hidden"""
 
+    def terminal_list_all_directories_detailed():
+        """Lists all directories including hidden with details"""
+
     def terminal_change_directory(path: str):
         """Lists change directory"""
 
@@ -28,3 +31,7 @@ class Actions:
 
     def terminal_kill_all():
         """kills the running command"""
+
+
+    def terminal_pipe_to_clipboard():
+        """Adds the command that pipes a commands output into the clipboard."""

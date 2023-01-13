@@ -27,6 +27,7 @@ mid click:
 #option = alt
 #shift
 #super = windows key
+<<<<<<< HEAD:plugin/mouse/mouse.talon
 <user.modifiers> touch:
     key("{modifiers}:down")
     mouse_click(0)
@@ -50,10 +51,39 @@ mid click:
     mouse_click()
     # close the mouse grid
     user.grid_close()
-left drag | drag:
+(left drag |drag | hold mouse): 
     user.mouse_drag(0)
     # close the mouse grid
     user.grid_close()
+=======
+<user.modifiers> touch: 
+	key("{modifiers}:down")
+	mouse_click(0)
+	key("{modifiers}:up")
+	# close the mouse grid
+	user.grid_close()
+<user.modifiers> righty: 
+	key("{modifiers}:down")
+	mouse_click(1)
+	key("{modifiers}:up")
+	# close the mouse grid
+	user.grid_close()
+(dubclick | duke): 
+	mouse_click()
+	mouse_click()
+	# close the mouse grid
+	user.grid_close()
+(tripclick | triplick): 
+	mouse_click()
+	mouse_click()
+	mouse_click()
+	# close the mouse grid
+	user.grid_close()
+(left drag |drag | hold mouse): 
+	user.mouse_drag()
+	# close the mouse grid
+	user.grid_close()
+>>>>>>> master:misc/mouse.talon
 right drag | righty drag:
     user.mouse_drag(1)
     # close the mouse grid

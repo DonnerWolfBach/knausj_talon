@@ -29,7 +29,10 @@ website_defaults = {
     "gist": "https://gist.github.com/",
     "wikipedia": "https://en.wikipedia.org/",
     "youtube": "https://www.youtube.com/",
+    "startpage":"https://startpage.com",
+    "dictionary":"https://www.linguee.com/"
 }
+
 
 _search_engine_defaults = {
     "amazon": "https://www.amazon.com/s/?field-keywords=%s",
@@ -37,6 +40,8 @@ _search_engine_defaults = {
     "map": "https://maps.google.com/maps?q=%s",
     "scholar": "https://scholar.google.com/scholar?q=%s",
     "wiki": "https://en.wikipedia.org/w/index.php?search=%s",
+    "startpage":"https://www.startpage.com/do/dsearch?query=%s",
+    "dictionary":"https://www.linguee.com/english-german/search?source=auto&query=%s"
 }
 
 ctx = Context()

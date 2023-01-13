@@ -21,6 +21,10 @@ class Actions:
         actions.insert("ls -force")
         actions.key("enter")
 
+    def terminal_list_all_directories_detailed():
+        """Lists all directories including hidden with details"""
+        actions.app.notify("TODO")
+
     def terminal_change_directory(path: str):
         """Lists change directory"""
         actions.insert(f"cd {path}")
@@ -51,3 +55,7 @@ class Actions:
         actions.key("ctrl-c")
         actions.insert("y")
         actions.key("enter")
+    
+    def terminal_pipe_to_clipboard():
+        """Adds the command that pipes a commands output into the clipboard."""
+        actions.insert("| Set-Clipboard")

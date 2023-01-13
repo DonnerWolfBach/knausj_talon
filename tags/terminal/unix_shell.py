@@ -23,7 +23,12 @@ class Actions:
         """Lists all directories including hidden"""
         actions.insert("ls -a")
         actions.key("enter")
-
+        
+    def terminal_list_all_directories_detailed():
+        """Lists all directories including hidden with details"""
+        actions.insert("ls -Alh")
+        actions.key("enter")
+        
     def terminal_change_directory(path: str):
         """Lists change directory"""
         actions.insert(f"cd {path}")
@@ -54,3 +59,7 @@ class Actions:
         actions.key("ctrl-c")
         actions.insert("y")
         actions.key("enter")
+
+    def terminal_pipe_to_clipboard():
+        """Adds the command that pipes a commands output into the clipboard."""
+        actions.insert("| xsel -ib")
