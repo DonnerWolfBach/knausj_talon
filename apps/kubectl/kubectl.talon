@@ -55,19 +55,11 @@ cube completion: "kubectl completion "
 
 cube (interface | API): "kubectl api "
 cube interface resources: "kubectl api-resources "
-<<<<<<< HEAD
-cube interface versions: "kubectl api-versions "
-cube config: "kubectl config "
-cube help: "kubectl help "
-cube plugin: "kubectl plugin "
-cube version: "kubectl version "
-=======
 cube interface versions:  "kubectl api-versions "
 cube (config | configuration):       "kubectl config "
 cube help:         "kubectl help "
 cube plugin:       "kubectl plugin "
 cube version:      "kubectl version "
->>>>>>> master
 
 cube {user.kubectl_action} [{user.kubectl_object}]:
     insert("kubectl {kubectl_action} ")
@@ -77,13 +69,9 @@ cube {user.kubectl_action} [{user.kubectl_object}]:
 cube detach:
     key("ctrl-p")
     key("ctrl-q")
-<<<<<<< HEAD
-cube shell: user.insert_between("kubectl exec -it ", " -- /bin/bash")
-=======
 
 cube shell:
     user.insert_between("kubectl exec -it ", " -- /bin/sh")
 
 cube bash:
     user.insert_between("kubectl exec -it ", " -- /bin/bash")
->>>>>>> master
