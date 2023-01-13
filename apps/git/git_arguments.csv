@@ -23,6 +23,7 @@ Option, Spoken form
 --global, global
 --global, global
 --hard, hard
+--help, help
 --ignore-case, ignore case
 --include-untracked, include untracked
 --interactive, interactive
