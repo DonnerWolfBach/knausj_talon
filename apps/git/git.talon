@@ -48,3 +48,7 @@ git commit highlighted:
     insert("git add ")
     edit.paste()
     insert("\ngit commit\n")
+
+git config email: actions.insert_between("git config --local user.email \"","\"")
+git config name: actions.insert_between( "git config --local user.name \"","\"")
+git edit config: "git config --local -e\n"
