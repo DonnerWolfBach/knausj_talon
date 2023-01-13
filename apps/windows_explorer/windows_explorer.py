@@ -110,7 +110,7 @@ class UserActions:
 
     def file_manager_terminal_here():
         actions.key("ctrl-l")
-        actions.insert("cmd.exe")
+        actions.insert("Powershell.exe")
         actions.key("enter")
 
     def file_manager_show_properties():
