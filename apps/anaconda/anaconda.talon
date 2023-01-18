@@ -41,3 +41,4 @@ anaconda verify: "conda verify "
 
 # find better place
 jupiter notebook start: "jupyter notebook"
+jupiter lab start: "jupyter lab"
