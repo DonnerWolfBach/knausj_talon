@@ -2,6 +2,10 @@ Subcommand, Spoken form (optional)
 add
 archive
 bisect
+bisect start
+bisect good
+bisect bad
+bisect reset
 blame
 branch
 checkout
