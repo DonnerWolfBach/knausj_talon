@@ -6,4 +6,9 @@ hallo welt: insert("Hallo Welt")
 
 ^Befehl Modus$:
     mode.enable("command")
-    mode.disable("german")
+    mode.disable("user.german")
+
+<phrase>: insert(phrase)
+
+# dirty fix for randomly recognizing "n"
+n: skip()
