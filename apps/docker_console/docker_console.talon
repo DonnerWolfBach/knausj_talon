@@ -1,6 +1,6 @@
 tag: terminal
 and tag: user.docker
-- 
+-
 # this file is for both docker and docker-compose in the console
 
 # it is assumed a sudo is necessary
@@ -12,9 +12,9 @@ docker run: "sudo docker run"
 docker pull: "sudo docker pull "
 docker login: "sudo docker login "
 docker remove force: "sudo docker rm -f "
-docker (build|built): "sudo docker build "
+docker (build | built): "sudo docker build "
 
-docker bash: 
+docker bash:
     "sudo docker exec -it  bash"
     key(left)
     repeat(4)
@@ -24,4 +24,3 @@ docker shell:
     "sudo docker exec -it  sh"
     key(left)
     repeat(2)
-

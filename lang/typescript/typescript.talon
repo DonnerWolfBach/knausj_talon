@@ -11,7 +11,7 @@ settings():
     user.code_private_variable_formatter = "PRIVATE_CAMEL_CASE"
     user.code_protected_variable_formatter = "PRIVATE_CAMEL_CASE"
     user.code_public_variable_formatter = "PRIVATE_CAMEL_CASE"
-    
+
 (op | is) strict equal: " === "
 (op | is) strict not equal: " !== "
 
@@ -28,30 +28,26 @@ state await: "await "
 state map:
     insert(".map()")
     key(left)
-    
+
 state filter:
     insert(".filter()")
     key(left)
-    
+
 state reduce:
     insert(".reduce()")
     key(left)
-    
-state spread: "..."
 
-^funky <user.text>$: user.code_default_function(text)
-^pro funky <user.text>$: user.code_protected_function(text)
-^pub funky <user.text>$: user.code_public_function(text)
+state spread: "..."
 
 # custom stuff
 debug log:
-  insert("console.log(``debug: `);") 
-  key(left)
-  key(left)
-  # please don't ask me wy ``debug: ` -> strange ` distribution
+    insert("console.log(``debug: `);")
+    key(left)
+    key(left)
+    # please don't ask me wy ``debug: ` -> strange ` distribution
 
 arrow function:
-  insert("()=>{}")
-  key(left)
-  
+    insert("()=>{}")
+    key(left)
+
 tag(): user.javascript

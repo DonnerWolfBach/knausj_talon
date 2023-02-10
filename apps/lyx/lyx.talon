@@ -21,19 +21,19 @@ matrix one by <number>:
     key(alt-m [)
     insert("\\array ")
     key(alt-m c i)
-    repeat(number-2)
+    repeat(number - 2)
 matrix <number> by one:
     key(alt-m [)
     insert("\\array ")
     key(alt-m w i)
-    repeat(number-2)
+    repeat(number - 2)
 matrix <number> by <number>:
     key(alt-m [)
     insert("\\array ")
-        key(alt-m w i)
-    repeat(number_1-2)
-        key(alt-m c i)
-    repeat(number_2-2)
+    key(alt-m w i)
+    repeat(number_1 - 2)
+    key(alt-m c i)
+    repeat(number_2 - 2)
 
 add matrix row: key(alt-m w i)
 (delete | remove) matrix row: key(alt-m w d)
@@ -117,7 +117,7 @@ text bold: "\\mathbf "
 text sans serif: "\\mathsf "
 text italic: "\\mathit "
 text typewriter: "\\mathtt "
-text (beebee|blackboard bold | blackboard): "\\mathbb "
+text (beebee | blackboard bold | blackboard): "\\mathbb "
 
 #
 # Program control
@@ -174,7 +174,7 @@ insert quotation: key(alt-p alt-q)
 insert quote: key(alt-p q)
 insert verse: key(alt-p v)
 
-# added by me: 
+# added by me:
 exactly if: "\\iff "
 therefore: "\\Rightarrow "
 sinus: "\\sin"
@@ -185,17 +185,16 @@ vector one by <number>:
     key(alt-m shift-8)
     insert("\\array ")
     key(alt-m c i)
-    repeat(number-2)
+    repeat(number - 2)
 vector <number> by one:
     key(alt-m shift-8)
     insert("\\array ")
     key(alt-m w i)
-    repeat(number-2)
+    repeat(number - 2)
 vector <number> by <number>:
     key(alt-m shift-8)
     insert("\\array ")
-        key(alt-m w i)
-    repeat(number_1-2)
-        key(alt-m c i)
-    repeat(number_2-2)
-
+    key(alt-m w i)
+    repeat(number_1 - 2)
+    key(alt-m c i)
+    repeat(number_2 - 2)
