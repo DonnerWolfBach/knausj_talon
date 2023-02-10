@@ -6,6 +6,9 @@ tag(): terminal
 # activates the implementation of the commands/functions in terminal.talon
 tag(): user.generic_windows_shell
 
+# activates unix utilities
+tag(): user.unix_utilities
+
 # makes commands for certain applications available
 # you can deactivate them if you do not use the application
 tag(): user.git
