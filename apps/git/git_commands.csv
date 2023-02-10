@@ -44,6 +44,7 @@ rerere status
 reset
 restore
 revert
+rev-list --max-parents=0 HEAD, first
 rm, remove
 shortlog,short log
 show

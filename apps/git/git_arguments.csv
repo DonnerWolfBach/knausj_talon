@@ -1,8 +1,10 @@
 Option, Spoken form
 --abort, abort
+--after, after
 --all, all
 --allow-empty, allow empty
 --amend, amend
+--before, before
 --cached, cached
 --cached, cashed
 --color-words, color words
@@ -52,6 +54,7 @@ Option, Spoken form
 --stat, stat
 --system, system
 --track, track
+--until, until
 --update, update
 --verbose, verbose
 -b, branch

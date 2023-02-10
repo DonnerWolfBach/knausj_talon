@@ -19,6 +19,7 @@ git status$: "git status\n"
 git add patch$: "git add --patch\n"
 git show head$: "git show HEAD\n"
 git diff (cached | cashed)$: "git diff --cached\n"
+git remote prune origin: "git remote prune origin\n"
 
 # Convenience
 git clone clipboard:
@@ -51,5 +52,3 @@ git commit highlighted:
 
 git config email: actions.insert_between('git config --local user.email "', '"')
 git config name: actions.insert_between('git config --local user.name "', '"')
-# TODO: think about removing the following, its redundant
-git edit config: "git config --local -e\n"
