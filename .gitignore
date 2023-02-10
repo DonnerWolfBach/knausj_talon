@@ -4,6 +4,16 @@ __pycache__
 *.sw?
 .idea/
 # Locally generated
-/settings
+/settings/*
 .vscode/settings.json
 .DS_Store
+
+# selected settings to not ignore
+!/settings/additional_words.csv
+!/settings/alphabet.csv
+!/settings/alphabet.csv
+!/settings/file_extensions.csv
+!/settings/search_engines.csv
+!/settings/unix_utilities.csv
+# TODO: add unix arguments
+!/settings/words_to_replace.csv
