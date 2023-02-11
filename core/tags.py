@@ -15,7 +15,6 @@ tagList = [
     "generic_windows_shell",
     "generic_unix_shell",
     "readline",
-    "terminal_location_shortcuts",
     "taskwarrior",  # commandline tag for taskwarrior commands
     "tmux",
     "windbg",

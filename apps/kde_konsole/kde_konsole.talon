@@ -15,6 +15,5 @@ tag(): user.anaconda
 
 tag(): user.tabs
 # TODO: add file_manager support
-tag(): user.terminal_location_shortcuts
 
 # TODO: integrate profile shortcut

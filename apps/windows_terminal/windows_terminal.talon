@@ -21,8 +21,6 @@ tag(): user.tabs
 # TODO: file_manager
 tag(): user.splits
 
-tag(): user.terminal_location_shortcuts
-
 # Uncomment the following line to enable common unix utilities from unix_utilities.py
 tag(): user.unix_utilities
 
