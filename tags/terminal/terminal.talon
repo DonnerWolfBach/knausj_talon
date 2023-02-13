@@ -8,6 +8,8 @@ lisa details: user.terminal_list_all_directories_detailed()
 katie [dir] [<user.text>]: user.terminal_change_directory(text or "")
 katie root: user.terminal_change_directory_root()
 katie (up | back | upwards): user.terminal_change_directory("..")
+katie <user.letter> complete:
+    user.terminal_change_directory(f"{letter} \t")
 
 go <user.system_path>: insert('cd "{system_path}"\n ls\n')
 path <user.system_path>: insert('"{system_path}"')
