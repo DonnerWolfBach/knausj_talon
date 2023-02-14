@@ -55,6 +55,7 @@ tee,tea
 touch
 tr -d,translate delete
 tr,translate
+tree
 true
 uniq -c,unique count
 uniq,unique

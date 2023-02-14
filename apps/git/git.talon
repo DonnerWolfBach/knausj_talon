@@ -16,6 +16,7 @@ git stash [push] [<user.git_arguments>] message [<user.prose>]:
 # Optimistic execution for frequently used commands that are harmless (don't
 # change repository or index state).
 git status$: "git status\n"
+git fetch$: "git fetch\n"
 git add patch$: "git add --patch\n"
 git show head$: "git show HEAD\n"
 git diff (cached | cashed)$: "git diff --cached\n"
