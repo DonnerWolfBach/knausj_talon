@@ -26,6 +26,8 @@ htop,harp top
 id -u,I D user
 id,I D
 less
+ls, lisa
+ls, list
 ln -s,link soft
 ln,link
 md5sum,M D five sum
