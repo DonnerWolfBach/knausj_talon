@@ -3,6 +3,7 @@ awk,ark
 base64 -d,base sixty four decode
 base64,base sixty four
 cat,concat
+cat ,cat
 cd,changed directory
 chmod -R,change mode recurse
 chmod,change mode
@@ -50,8 +51,11 @@ sort
 ssh,S S H
 stat
 sudo,pseudo
+sudo, super user do
 tail -f,tail follow
 tail
+tar 
+tar -xf , tar extract
 tee -a,tea append
 tee,tea
 touch
