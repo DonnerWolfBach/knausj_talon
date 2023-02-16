@@ -3,6 +3,7 @@ awk,ark
 base64 -d,base sixty four decode
 base64,base sixty four
 cat,concat
+cat ,cat
 cd,changed directory
 cd,change directory
 cd, katie
@@ -32,6 +33,8 @@ id,I D
 jupyter lab
 jupyter notebook
 less
+ls , lisa
+ls , list
 ln -s,link soft
 ln,link
 md5sum,M D five sum
@@ -56,13 +59,17 @@ sort
 ssh,S S H
 stat
 sudo,pseudo
+sudo, super user do
 tail -f,tail follow
 tail
+tar 
+tar -xf , tar extract
 tee -a,tea append
 tee,tea
 touch
 tr -d,translate delete
 tr,translate
+tree
 true
 uniq -c,unique count
 uniq,unique
