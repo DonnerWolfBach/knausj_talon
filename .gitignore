@@ -15,5 +15,5 @@ __pycache__
 !/settings/file_extensions.csv
 !/settings/search_engines.csv
 !/settings/unix_utilities.csv
-# TODO: add unix arguments
+!/settings/unix_arguments.csv
 !/settings/words_to_replace.csv
