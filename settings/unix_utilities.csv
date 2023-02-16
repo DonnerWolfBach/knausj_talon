@@ -4,11 +4,15 @@ base64 -d,base sixty four decode
 base64,base sixty four
 cat,concat
 cd,changed directory
+cd,change directory
+cd, katie
 chmod -R,change mode recurse
 chmod,change mode
 chown -R,change owner recurse
 chown,change owner
 copy,copy
+code
+codium
 curl
 cut
 df -h,disk free human
@@ -25,6 +29,8 @@ head
 htop,harp top
 id -u,I D user
 id,I D
+jupyter lab
+jupyter notebook
 less
 ln -s,link soft
 ln,link
@@ -33,6 +39,8 @@ mkdir,make dear
 mkdir,make directory
 paste
 printf,print format
+pyreverse
+pyreverse, python reverse
 pwd,work dear
 rev,reverse
 rsync,are sync
