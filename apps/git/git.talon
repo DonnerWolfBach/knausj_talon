@@ -51,5 +51,5 @@ git commit highlighted:
     edit.paste()
     insert("\ngit commit\n")
 
-git config email: actions.insert_between('git config --local user.email "', '"')
-git config name: actions.insert_between('git config --local user.name "', '"')
+git config email: user.insert_between('git config --local user.email "', '"')
+git config name: user.insert_between('git config --local user.name "', '"')
