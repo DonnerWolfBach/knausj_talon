@@ -1,7 +1,8 @@
-app: microsoft_teams
-os: windows
-os: linux
+app.name: Microsoft Teams
 -
+
+# TODO: check not working/useless commands
+# and remove or fix them
 
 # Shortcut reference
 # https://support.office.com/en-us/article/keyboard-shortcuts-for-microsoft-teams-2e8e2a70-e8d8-4a19-949b-4c36dd5292d2
@@ -15,8 +16,8 @@ go to: key(ctrl-g)
 open (apps | applications): key(ctrl-`)
 [start] new chat: key(ctrl-n)
 open settings: key(ctrl-,)
-open help: key(f1)
-close: key(escape)
+# open help: key(f1)
+# close: key(escape)
 
 # navigations
 open activity: key(ctrl-1)
