@@ -11,7 +11,7 @@ chmod -R,change mode recurse
 chmod,change mode
 chown -R,change owner recurse
 chown,change owner
-copy,copy
+cp,copy
 code
 codium
 curl
@@ -40,11 +40,13 @@ ln,link
 md5sum,M D five sum
 mkdir,make dear
 mkdir,make directory
+mv , move
 paste
 printf,print format
 pyreverse
 pyreverse, python reverse
 pwd,work dear
+rm ,remove
 rev,reverse
 rsync,are sync
 sed,said
