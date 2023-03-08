@@ -45,4 +45,5 @@ class AppActions:
         # requires easy window switcher or equivalent (built into most Linux)
 
     def window_previous():
-        actions.key("alt-shift-`")
+        # this may just work for kde plasma
+        actions.key("alt-~")
