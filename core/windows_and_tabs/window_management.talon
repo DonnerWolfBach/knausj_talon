@@ -17,3 +17,20 @@ snap <user.running_applications> <user.window_snap_position>:
     user.snap_app(running_applications, window_snap_position)
 snap <user.running_applications> [screen] <number>:
     user.move_app_to_screen(running_applications, number)
+
+# task switcher commands
+# right now for kde plasma/linux only
+# TODO: abstract and generalize that
+# TODO: fix issue where alt is not "unholded"/still set down or up
+task switcher open: 
+    key(alt:down)
+    key(tab)
+
+task switcher close:
+    key(alt:up)
+
+task next:
+    key(tab)
+
+task last:
+    key(shift-tab)
