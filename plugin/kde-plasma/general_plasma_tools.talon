@@ -12,3 +12,4 @@ desktop grid: key(ctrl-f8)
 # this is toggle btw:
 hide [all] windows: key(super-d)
 
+# TODO: move task switcher here
