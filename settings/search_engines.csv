@@ -6,4 +6,4 @@ https://scholar.google.com/scholar?q=%s,scholar
 https://en.wikipedia.org/w/index.php?search=%s,wiki
 https://www.startpage.com/do/dsearch?query=%s,startpage
 https://www.linguee.com/english-german/search?source=auto&query=%s,dictionary
-https://duckduckgo.com/?t=ftsa&q=%s&ia=web,duck
+https://duckduckgo.com/?t=ftsa&q=%s&ia=web&kav=1&kn=1,duck
