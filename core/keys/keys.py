@@ -143,7 +143,6 @@ ctx.lists["self.letter"] = alphabet_list
 # `symbol_key_words` is for key names that should be available in command mode, but NOT during dictation.
 punctuation_words = {
     "back tick": "`",
-    "grave": "`",
     "comma": ",",
     # Workaround for issue with conformer b-series; see #946
     "coma": ",",
@@ -165,6 +164,11 @@ punctuation_words = {
     # Currencies
     "dollar sign": "$",
     "pound sign": "£",
+    "hyphen": "-",
+    "L paren": "(",
+    "left paren": "(",
+    "R paren": ")",
+    "right paren": ")",
 }
 symbol_key_words = {
     "dot": ".",
@@ -183,6 +187,7 @@ symbol_key_words = {
     "dash": "-",
     "equals": "=",
     "plus": "+",
+    "grave": "`",
     "tilde": "~",
     "bang": "!",
     "down score": "_",
