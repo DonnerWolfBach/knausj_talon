@@ -41,6 +41,7 @@ prune, prune
 quiet, quiet
 quit, quit
 rebase, rebase
+recursive
 remote, remote
 set-upstream, set up stream
 set-upstream-to, set up stream to
