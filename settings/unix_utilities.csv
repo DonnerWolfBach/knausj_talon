@@ -3,10 +3,10 @@ awk,ark
 base64 -d,base sixty four decode
 base64,base sixty four
 cat,concat
-cat ,cat
-cd ,changed directory
-cd ,change directory
-cd , katie
+cat,cat
+cd,changed directory
+cd,change directory
+cd, katie
 chmod -R,change mode recurse
 chmod ,change mode
 chmod -x ,change mode make executable
@@ -34,20 +34,20 @@ id,I D
 jupyter lab
 jupyter notebook
 less
-ls , lisa
-ls , list
+ls, lisa
+ls, list
 ln -s,link soft
 ln,link
 md5sum,M D five sum
 mkdir,make dear
 mkdir,make directory
-mv , move
+mv, move
 paste
 printf,print format
 pyreverse
 pyreverse, python reverse
 pwd,work dear
-rm ,remove
+rm,remove
 rev,reverse
 rsync,are sync
 sed,said
