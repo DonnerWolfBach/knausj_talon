@@ -119,10 +119,7 @@ def unix_arguments(m) -> str:
     return " --".join([""] + m.unix_argument_list)
 
 
-@mod.capture(rule="<user.unix_arguments> | <user.text>")
+@mod.capture(rule="( {user.unix_argument} | <user.text> )")
 def unix_free_form_argument(m) -> str:
     """An argument name in kebab-case, with defined arguments being preferred."""
-    try:
-        return m.unix_arguments
-    except AttributeError:
-        return actions.user.formatted_text(m, "DASH_SEPARATED")
+    return actions.user.formatted_text(m, "DASH_SEPARATED")
