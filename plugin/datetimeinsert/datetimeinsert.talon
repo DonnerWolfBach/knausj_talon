@@ -6,5 +6,7 @@ timestamp insert UTC: insert(user.time_format_utc("%Y-%m-%d %H:%M:%S"))
 timestamp insert UTC high resolution:
     insert(user.time_format_utc("%Y-%m-%d %H:%M:%S.%f"))
 
+time insert: insert(user.time_format("%H:%M"))
+
 # custom
 week insert: insert(user.time_format("W%W"))
