@@ -31,6 +31,7 @@ head
 htop,harp top
 id -u,I D user
 id,I D
+ipython, I python
 jupyter lab
 jupyter notebook
 less
@@ -54,12 +55,15 @@ sed,said
 seq,sequence
 sha256sum,shah two fifty six sum
 sleep
+snap
+snap install
 sort -h,sort human
 sort -n,sort numeric
 sort -r,sort reverse
 sort -u,sort unique
 sort
 ssh,S S H
+ssh-keygen,S S H key generator
 stat
 sudo,pseudo
 sudo, super user do
