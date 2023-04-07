@@ -30,6 +30,12 @@ ctx.lists["user.prose_snippets"] = {
     # Curly quotes are used to obtain proper spacing for left and right quotes, but will later be straightened.
     "open quote": "“",
     "close quote": "”",
+    "open paren": "(",
+    "close paren": ")",
+    "open square": "[",
+    "close square": "]",
+    "open curly": "{",
+    "close curly": "}",
     "smiley": ":-)",
     "winky": ";-)",
     "frowny": ":-(",
