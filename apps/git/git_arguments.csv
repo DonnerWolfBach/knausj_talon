@@ -44,6 +44,9 @@ Option, Spoken form
 --quiet, quiet
 --quit, quit
 --rebase, rebase
+--recurse-submodules, recurse submodules
+--recurse, recurse
+--recursive, recursive
 --remote, remote
 --set-upstream, set up stream
 --set-upstream-to, set up stream to
