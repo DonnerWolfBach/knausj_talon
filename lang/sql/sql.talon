@@ -14,6 +14,8 @@ where: "WHERE "
 order by: "ORDER BY "
 group by: "GROUP BY "
 having: "HAVING "
+update: "UPDATE "
+set: "SET "
 descending: " DESC"
 ascending: " ASC"
 dot i d: ".id"
@@ -37,6 +39,7 @@ column:
     key(return)
     ", "
 
-count: user.code_insert_function("Count", "")
+count: user.code_insert_function("COUNT", "")
+average: user.code_insert_function("AVG", "")
 
 date: user.insert_between("DATE '", "'")

@@ -62,6 +62,8 @@ sort -n,sort numeric
 sort -r,sort reverse
 sort -u,sort unique
 sort
+sqlite3, sqlite three
+sqlite3, sqlite
 ssh,S S H
 ssh-keygen,S S H key generator
 stat
