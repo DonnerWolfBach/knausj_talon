@@ -47,6 +47,7 @@ paste
 printf,print format
 pyreverse
 pyreverse, python reverse
+python
 pwd,work dear
 rm,remove
 rev,reverse
@@ -71,7 +72,7 @@ sudo,pseudo
 sudo, super user do
 tail -f,tail follow
 tail
-tar 
+tar
 tar -xf , tar extract
 tee -a,tea append
 tee,tea
