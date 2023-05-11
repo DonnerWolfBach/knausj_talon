@@ -96,6 +96,7 @@ class Actions:
 
 def get_editor_app() -> ui.App:
     editor_names = get_editor_names()
+    print(editor_names)
 
     for app in ui.apps(background=False):
         if app.name in editor_names:
