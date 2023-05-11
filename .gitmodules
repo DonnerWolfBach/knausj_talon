@@ -1,3 +1,6 @@
 [submodule "plugin/rango-talon"]
 	path = plugin/rango-talon
 	url = https://github.com/DonnerWolfBach/rango-talon.git
+[submodule "plugin/cursorless-talon"]
+	path = plugin/cursorless-talon
+	url = https://github.com/DonnerWolfBach/cursorless-talon.git
