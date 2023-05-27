@@ -11,5 +11,7 @@ os: linux
 
 ^spectacle (desktop | all screens)$: key("shift-printscr")
 
-^spectacle rectangle$: key("shift-super-printscr")
+# I have "spectacle rectangle" as an alias for grab selection,
+# also see calling_spectacle.py for that
+# ^spectacle rectangle$: key("shift-super-printscr")
 
