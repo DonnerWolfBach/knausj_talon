@@ -9,5 +9,5 @@ Each of the principles is numbered for easy referencing. The body is formatted a
 
 # Coding principles
 
-- P03 - Use the `app.bundle` matcher for apps on OSX. This is the least ambiguous way of referring to a particular program.
+- P03 - Use the `app.bundle` matcher for apps on macOS. This is the least ambiguous way of referring to a particular program.
 - P04 - Use both `app.name` and `app.exe` matchers for apps on Windows. That is the context should OR together one matcher of each type. Apparently the [MUICache](https://www.magnetforensics.com/blog/forensic-analysis-of-muicache-files-in-windows/) can break, perhaps making one of these matchers stop working.
