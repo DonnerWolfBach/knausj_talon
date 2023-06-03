@@ -36,6 +36,7 @@ Option, Spoken form
 --move, move
 --no-edit, no edit
 --no-keep-index, no keep index
+--no-rebase, no rebase
 --no-track, no track
 --no-verify, no verify
 --orphan, orphan
@@ -70,3 +71,5 @@ main
 master
 origin
 upstream
+origin/main,origin main
+origin/master,origin master
