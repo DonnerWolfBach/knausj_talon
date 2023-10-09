@@ -95,3 +95,8 @@ import (unittest | unit test):
     """
 
 format string: user.insert_between("f\"","\"")
+
+watermark notebook:
+    """%load_ext watermark
+    %watermark -i -u -v -p pandas,numpy,sklearn,matplotlib"""
+
