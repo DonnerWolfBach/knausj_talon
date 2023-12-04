@@ -76,11 +76,14 @@ single (time it| benchmarking):
 
 
 import logging (basics | stuff):
-    """from logging import info,debug
-    import logging
-    # logging.setLevel to reset level during runtime
+    """from logging import debug,DEBUG,info,INFO,basicConfig,getLogger, WARNING
+    basicConfig(
+        level=DEBUG
+    )
 
-    logging.basicConfig(level=logging.DEBUG)"""
+    # makes sure matplotlib does not spam
+    import matplotlib
+    getLogger(matplotlib.__name__).setLevel(WARNING)"""
 
 debug logging: user.insert_between("debug(f\"","\")")
 info logging: user.insert_between("info(f\"","\")")
@@ -95,6 +98,8 @@ import (unittest | unit test):
     """
 
 format string: user.insert_between("f\"","\"")
+format string (simple | equals): user.insert_between("f\"{","=}\"")
+
 
 watermark notebook:
     """%load_ext watermark
