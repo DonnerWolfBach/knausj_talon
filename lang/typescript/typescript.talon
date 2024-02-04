@@ -1,5 +1,9 @@
-tag: user.typescript
+code.language: typescript
+code.language: typescriptreact
 -
+
+# Most of this file I have added myself, it may be severely outdated
+
 tag(): user.code_operators
 tag(): user.code_comment
 tag(): user.code_generic
@@ -51,3 +55,10 @@ arrow function:
     key(left)
 
 tag(): user.javascript
+
+type union [<user.code_type>]: " | {code_type or ''}"
+type intersect [<user.code_type>]: " & {code_type or ''}"
+
+state type: user.insert_between("type ", " = ")
+
+as const: " as const"
