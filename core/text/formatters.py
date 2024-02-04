@@ -184,6 +184,7 @@ formatters_dict = {
         first_vs_rest(lambda w: title_case()(0, w, True)),
     ),
     "CAPITALIZE_ALL_WORDS": (SEP, title_case()),
+    "SPONGEBOB_CASE": (SEP, transform_to_spongebob_case_alternative)
 }
 
 # Mapping from spoken phrases to formatter names
@@ -376,15 +377,6 @@ def unformat_text(text: str) -> str:
     return unformatted.lower()
 
 
-<<<<<<< HEAD
-ctx.lists["self.formatters"] = formatters_words.keys()
-ctx.lists["self.prose_formatter"] = {
-    "say": "NOOP",
-#     "speak": "NOOP",
-    "sentence": "CAPITALIZE_FIRST_WORD",
-}
-=======
 ctx.lists["self.formatters"] = formatter_words.keys()
 ctx.lists["self.code_formatter"] = code_formatter_names.keys()
 ctx.lists["self.prose_formatter"] = prose_formatter_names.keys()
->>>>>>> fce77d0a1a3825cc77ea91b487b4276024ec475f
