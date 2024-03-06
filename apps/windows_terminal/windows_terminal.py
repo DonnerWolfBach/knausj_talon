@@ -6,6 +6,8 @@ ctx = Context()
 mod = Module()
 ctx.matches = r"""
 app: windows_terminal
+app: windowsterminal.exe
+app.name: WindowsTerminal.exe
 """
 
 user_path = os.path.expanduser("~")
