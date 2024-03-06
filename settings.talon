@@ -2,7 +2,7 @@ settings():
     speech.timeout = 0.5
 
     # Adjust the scale of the imgui to my liking
-    imgui.scale = 1.3
+    imgui.scale = 1.5
 
     # If `true`, automatically show the picker GUI when the file manager has focus
     user.file_manager_auto_show_pickers = false
@@ -26,7 +26,7 @@ settings():
     user.mouse_enable_pop_click = 1
 
     # If `true`, use a hissing noise to scroll continuously
-    user.mouse_enable_hiss_scroll = falseu
+    user.mouse_enable_hiss_scroll = false
 
     # If `true`, hide the continuous scroll/gaze scroll GUI
     user.mouse_hide_mouse_gui = false
