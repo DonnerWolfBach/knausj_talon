@@ -22,6 +22,7 @@ grep
 help
 init, in it
 log
+log, lock
 ls-files, ls files
 merge
 mergetool, merge tool
