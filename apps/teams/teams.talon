@@ -1,4 +1,7 @@
 app.name: Microsoft Teams
+app.name: Microsoft Teams (work or school)
+app.exe: ms-teams.exe
+
 -
 
 # TODO: check not working/useless commands
