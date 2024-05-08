@@ -140,11 +140,13 @@ def run_command(
 
     communication_dir_path = get_communication_dir_path()
 
+    print(f"{communication_dir_path=}")
+
     if not communication_dir_path.exists():
         if args or return_command_output:
             raise Exception("Must use command-server extension for advanced commands")
         raise NoFileServerException("Communication directory not found")
-
+    
     request_path = communication_dir_path / "request.json"
     response_path = communication_dir_path / "response.json"
 
@@ -197,12 +199,29 @@ def run_command(
     return decoded_contents["returnValue"]
 
 
+def is_nixos():
+    # Check if the /etc/os-release file exists and contains "nixos"
+    if os.path.isfile('/etc/os-release'):
+        with open('/etc/os-release') as f:
+            os_release = f.read()
+            return "ID=nixos" in os_release or "ID_LIKE=nixos" in os_release
+
+    # Also, confirm if the /etc/nixos directory exists as further evidence
+    return os.path.isdir('/etc/nixos')
+
+
+
+
 def get_communication_dir_path():
     """Returns directory that is used by command-server for communication
 
     Returns:
         Path: The path to the communication dir
     """
+    # dirty fix for not finding the command server on nixos
+    if is_nixos():
+        return Path("/tmp/vscode-command-server-1000/")
+
     suffix = ""
 
     # NB: We don't suffix on Windows, because the temp dir is user-specific
