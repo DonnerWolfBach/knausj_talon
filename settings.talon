@@ -2,7 +2,7 @@ settings():
     speech.timeout = 0.5
 
     # Adjust the scale of the imgui to my liking
-    imgui.scale = 1.5
+    imgui.scale = 1.2
 
     # If `true`, automatically show the picker GUI when the file manager has focus
     user.file_manager_auto_show_pickers = false
