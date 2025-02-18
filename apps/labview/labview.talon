@@ -56,3 +56,7 @@ next control: key("tab")
 
 # Navigate backward through controls or indicators while running
 previous control: key("shift-tab")
+
+# manually added
+
+remove broken wires: key("ctrl-b")
