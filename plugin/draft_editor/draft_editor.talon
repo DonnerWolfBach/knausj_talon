@@ -1,4 +1,5 @@
-not app: vscode
+tag: user.draft_editor_app_running
+and not tag: user.draft_editor_app_focused
 -
 
 draft this: user.draft_editor_open()

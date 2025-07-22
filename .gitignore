@@ -5,8 +5,6 @@ __pycache__
 .idea/
 # Locally generated
 /settings/*
-.vscode/settings.json
-.DS_Store
 
 # selected settings to not ignore
 !/settings/additional_words.csv
@@ -17,3 +15,16 @@ __pycache__
 !/settings/unix_utilities.csv
 !/settings/unix_arguments.csv
 !/settings/words_to_replace.csv
+
+# we highly recommended against removing the private folder from the gitignore file
+# the directory is used to store sensitive information such as contacts
+/private
+.vscode/settings.json
+.DS_Store
+*.bak
+# Emacs (from https://github.com/github/gitignore/blob/main/Global/Emacs.gitignore)
+*~
+\#*\#
+.\#*
+# Vim (from https://github.com/github/gitignore/blob/main/Global/Vim.gitignore)
+[._]*.swp

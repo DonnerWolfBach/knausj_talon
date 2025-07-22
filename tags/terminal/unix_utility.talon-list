@@ -1,0 +1,91 @@
+list: user.unix_utility
+-
+ark: awk
+base sixty four decode: base64 -d
+base sixty four: base64
+concat: cat
+cat
+changed directory: cd
+change directory: cd
+katie: cd
+change mode recurse: chmod -R
+change mode: chmod
+change mode make executable: chmod -x
+change owner recurse: chown -R
+change owner: chown
+copy: cp
+code
+codium
+curl
+cut
+disk free human: df -h
+disk free: df
+dig
+disk usage human: du -h
+disk usage: du
+echo
+false
+find
+grab here: grep -Hirn
+grab: grep
+head
+harp top: htop
+I D user: id -u
+I D: id
+I python: ipython
+jupyter lab
+jupyter notebook
+less
+lisa: ls
+list: ls
+link soft: ln -s
+link: ln
+M D five sum: md5sum
+make dear: mkdir
+make directory: mkdir
+move: mv
+paste
+print format: printf
+pyreverse
+python reverse: pyreverse
+python
+work dear: pwd
+remove: rm
+reverse: rev
+are sync: rsync
+said: sed
+sequence: seq
+shah two fifty six sum: sha256sum
+sleep
+snap
+snap install
+sort human: sort -h
+sort numeric: sort -n
+sort reverse: sort -r
+sort unique: sort -u
+sort
+sqlite three: sqlite3
+sqlite: sqlite3
+S S H: ssh
+S S H key generator: ssh-keygen
+stat
+pseudo: sudo
+super user do: sudo
+tail follow: tail -f
+tail
+tar
+tar extract: tar -xf
+tea append: tee -a
+tea: tee
+touch
+translate delete: tr -d
+translate: tr
+tree
+true
+unique count: uniq -c
+unique: uniq
+word count characters: wc -c
+word count lines: wc -l
+word count: wc
+who
+who am I: whoami

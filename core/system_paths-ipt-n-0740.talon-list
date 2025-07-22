@@ -1,0 +1,26 @@
+list: user.system_paths
+hostname: ipt-n-0740
+-
+user: C:\Users\knl-sn
+profile: C:\Users\knl-sn
+desktop: C:\Users\knl-sn\Desktop
+desk: C:\Users\knl-sn\Desktop
+documents: C:\Users\knl-sn\Documents
+docks: C:\Users\knl-sn\Documents
+downloads: C:\Users\knl-sn\Downloads
+music: C:\Users\knl-sn\Music
+pictures: C:\Users\knl-sn\Pictures
+videos: C:\Users\knl-sn\Videos
+talon home: C:\Users\knl-sn\AppData\Roaming\talon
+talon user: C:\Users\knl-sn\AppData\Roaming\talon\user
+talon recordings: C:\Users\knl-sn\AppData\Roaming\talon\recordings
+Data Lectures: D:/Uni
+Lectures: D:/Uni
+University: D:/Uni
+Projects: C:\Users\knl-sn\Projects
+Current Project: C:\Users\knl-sn\Projects\OCT\OCTLib
+Data Home: D:/
+Data Drive: D:/
+Experiments: D:/Programmier-Versuche
+apprenticeship folder: M:\Arbeitsverzeichnis\OE320\hts_Azubis
+apprenticeship drive: M:\Arbeitsverzeichnis\OE320\hts_Azubis

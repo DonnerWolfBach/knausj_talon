@@ -1,0 +1,11 @@
+list: user.search_engine
+-
+amazon: https://www.amazon.com/s/?field-keywords=%s
+google: https://www.google.com/search?q=%s
+map: https://maps.google.com/maps?q=%s
+scholar: https://scholar.google.com/scholar?q=%s
+wiki: https://en.wikipedia.org/w/index.php?search=%s
+startpage: https://www.startpage.com/do/dsearch?query=%s
+dictionary: https://www.linguee.com/english-german/search?source=auto&query=%s
+netherlands: https://www.linguee.com/english-dutch/search?query=%s
+duck: https://duckduckgo.com/?t=ftsa&q=%s&ia=web&kav=1&kn=1
