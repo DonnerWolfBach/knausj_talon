@@ -201,6 +201,21 @@ def remove_code_formatting(text: str) -> str:
         return result.lower()
     return text
 
+def transform_to_spongebob_case_alternative(
+    string: str
+) -> str:
+    """a more concise alternative to the first implementation"""
+    print(f"debug: string={string}")
+    string = list(string)
+    for index, character in enumerate(string):
+        # ignore non letter characters
+        if character.isalpha():
+            if index % 2 == 0:
+                string[index] = character.upper()
+            else:
+                string[index] = character.lower()
+    return "".join(string)
+
 
 def de_camel(text: str) -> str:
     """Replacing camelCase boundaries with blank space"""
@@ -228,6 +243,7 @@ formatter_list = [
     CustomFormatter("ALL_LOWERCASE", lambda text: text.lower()),
     CustomFormatter("COMMA_SEPARATED", lambda text: re.sub(r"\s+", ", ", text)),
     CustomFormatter("REMOVE_FORMATTING", remove_code_formatting),
+    CustomFormatter("SPONGEBOB_CASE", transform_to_spongebob_case_alternative),
     TitleFormatter("CAPITALIZE_ALL_WORDS"),
     # The sentence formatter being called `CAPITALIZE_FIRST_WORD` is a bit of a misnomer, but kept for backward compatibility.
     SentenceFormatter("CAPITALIZE_FIRST_WORD"),
@@ -243,6 +259,7 @@ formatter_list = [
     CodeFormatter("ALL_SLASHES", "/", lambda text: f"/{text.lower()}", lower),
     CodeFormatter("DOUBLE_UNDERSCORE", "__", lower, lower),
     CodeFormatter("DOUBLE_COLON_SEPARATED", "::", lower, lower),
+
 ]
 
 formatters_dict = {f.id: f for f in formatter_list}
