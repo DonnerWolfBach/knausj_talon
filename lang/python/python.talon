@@ -50,8 +50,6 @@ import <user.code_libraries>:
     user.code_insert_library(code_libraries, "")
     key(end enter)
 
-from import: user.insert_between("from ", " import ")
-
 # custom stuff (TODO: clean up)
 
 insert debugger: "import pdb; pdb.set_trace()"
