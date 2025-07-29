@@ -8,6 +8,7 @@ tag(): user.splits
 tag(): user.tabs
 tag(): user.command_search
 
+tag(): user.terminal
 window reload: user.vscode("workbench.action.reloadWindow")
 window close: user.vscode("workbench.action.closeWindow")
 #multiple_cursor.py support end
