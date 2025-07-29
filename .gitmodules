@@ -4,3 +4,6 @@
 [submodule "plugin/cursorless-talon"]
 	path = plugin/cursorless-talon
 	url = https://github.com/DonnerWolfBach/cursorless-talon.git
+[submodule "plugin/talon-ai-tools"]
+	path = plugin/talon-ai-tools
+	url = https://github.com/C-Loftus/talon-ai-tools.git
