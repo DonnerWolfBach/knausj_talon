@@ -57,7 +57,7 @@ code_languages = [
     # Language("vba", "vba", ["vba"]),
     Language("vimscript", "vim script", ["vim", "vimrc"]),
     # These languages doesn't actually have a language mode, but we do have snippets.
-    # Language("cpp", "see plus plus", ["cpp", "hpp"]),
+    Language("cpp", "see plus plus", ["h", "c", "cpp", "hpp"]), # added to c for convenince
     Language("csv", "csv", ["csv"]),
     Language("html", "html", ["html"]),
     Language("json", "json", ["json"]),
