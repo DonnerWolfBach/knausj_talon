@@ -1,5 +1,6 @@
 list: user.code_common_function
 code.language: c
+code.language: cpp
 -
 
 alloc ah: alloca
