@@ -128,8 +128,12 @@ def on_draw(c: SkiaCanvas):
         c.paint.shader = skia.Shader.radial_gradient(
             Point2d(x, y), radius, [color_text, color_text]
         )
+        text = current_microphone
+        if(app.platform == "windows"):
+            text = text.split("(")[1]
 
-        text = current_microphone[:2]
+        text = text[:2]
+
         c.paint.style = c.paint.Style.FILL
         c.paint.color = color_text
         text_rect = c.paint.measure_text(text)[1]
