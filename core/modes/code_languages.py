@@ -18,7 +18,7 @@ code_languages = [
     # Language("assembly", "assembly", ["asm", "s"]),
     # Language("bash", "bash", ["sh", "bashbook"]),
     Language("batch", "batch", ["bat"]),
-    Language("c", "see", ["c", "h"]),
+    Language("c", "see", ["c", "h", "cpp", "hpp", "in"]),
     # Language("cmake", "see make", ["cmake"]),
     Language("csharp", "see sharp", ["cs"]),
     Language("css", "c s s", ["css"]),
@@ -38,7 +38,7 @@ code_languages = [
     Language("php", "p h p", ["php"]),
     # Language("powershell", "power shell", ["ps1"]),
     Language("protobuf", "proto buf", ["proto"]),
-    Language("python", "python", ["py"]),
+    Language("python", "python", ["py","ipynb"]),
     Language("r", "are language", ["r"]),
     # Language("racket", "racket", ["rkt"]),
     Language("ruby", "ruby", ["rb"]),
@@ -57,7 +57,7 @@ code_languages = [
     # Language("vba", "vba", ["vba"]),
     Language("vimscript", "vim script", ["vim", "vimrc"]),
     # These languages doesn't actually have a language mode, but we do have snippets.
-    Language("cpp", "see plus plus", ["cpp", "hpp"]),
+    Language("cpp", "see plus plus", ["h", "c", "cpp", "hpp"]), # added to c for convenince
     Language("csv", "csv", ["csv"]),
     Language("html", "html", ["html"]),
     Language("json", "json", ["json"]),
