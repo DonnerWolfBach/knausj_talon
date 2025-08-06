@@ -28,3 +28,6 @@ __pycache__
 .\#*
 # Vim (from https://github.com/github/gitignore/blob/main/Global/Vim.gitignore)
 [._]*.swp
+
+# system_paths autogenerations
+core/system_paths*.talon-list
