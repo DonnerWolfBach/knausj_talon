@@ -17,14 +17,31 @@ end block: "endblock"
 string
 string find: "string(FIND"
 string replace: "string(REPLACE"
-
-
 string regex match: "string(REGEX MATCH"
 string regex match all: "string(REGEX MATCHALL"
 string regex replace: "string(REGEX REPLACE"
-
 string length: "string(LENGTH"
 string to lower: "string(TOLOWER"
 string to upper: "string(TOUPPER"
 string strip: "string(STRIP"
 string sub string: "string(SUBSTRING"
+
+list
+list append: "list(APPEND"
+list filter: "list(FILTER"
+list find: "list(FIND"
+list get: "list(GET"
+list insert: "list(INSERT"
+list join: "list(JOIN"
+list length: "list(LENGTH"
+list prepend: "list(PREPEND"
+list remove: "list(REMOVE"
+list remove at: "list(REMOVE_AT"
+list remove duplicates: "list(REMOVE_DUPLICATES"
+list remove item: "list(REMOVE_ITEM"
+list reverse: "list(REMOVE"
+list sort: "list(SORT"
+list sublist: "list(SUBLIST"
+
+math
+math expression: "math(EXPR"
