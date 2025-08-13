@@ -16,3 +16,15 @@ end block: "endblock"
 
 string
 string find: "string(FIND"
+string replace: "string(REPLACE"
+
+
+string regex match: "string(REGEX MATCH"
+string regex match all: "string(REGEX MATCHALL"
+string regex replace: "string(REGEX REPLACE"
+
+string length: "string(LENGTH"
+string to lower: "string(TOLOWER"
+string to upper: "string(TOUPPER"
+string strip: "string(STRIP"
+string sub string: "string(SUBSTRING"
