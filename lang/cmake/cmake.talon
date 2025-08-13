@@ -18,9 +18,3 @@ settings():
 
 retrieve (variable | value): 
     user.insert_between("${","}")
-
-# to avoid overlapping with funk from common_functions 
-# (string funk would overlap with formatter)
-command string <user.cmake_string_functions>: 
-    user.insert_between("string({cmake_string_functions} ",")")
-

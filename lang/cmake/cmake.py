@@ -18,19 +18,14 @@ ctx.lists["user.code_type"] = {
     "internal": "INTERNAL"
 }
 
-mod.list("cmake_string_functions", desc="List of string functions for cmake, which require special formatting")
-
-
-@mod.capture(rule="{user.cmake_string_functions}")
-def cmake_string_functions(m) -> str:
-    """Returns a function name"""
-    return m.cmake_string_functions
-
 
 @ctx.action_class("user")
 class UserActions:
     def code_insert_function(text: str, selection: str):
-        text += f"({selection or ''})"
+        # for string functions and other functions where the functionalitiy
+        # is determinded by the first parameter
+        text += " " if "(" in text else "("
+        text += f"{selection or ''})"
         actions.user.paste(text)
         actions.edit.left()
 

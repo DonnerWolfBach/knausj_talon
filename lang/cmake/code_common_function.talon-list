@@ -15,3 +15,4 @@ block
 end block: "endblock"
 
 string
+string find: "string(FIND"
