@@ -1,0 +1,5 @@
+list: user.cmake_string_functions
+code.language: cmake
+-
+find: "FIND"
+REPLACE

@@ -1,0 +1,17 @@
+list: user.code_common_function
+code.language: cmake
+-
+
+set
+unset
+option
+message
+
+set property: "set_property"
+mark as advanced: "mark_as_advanced"
+
+
+block
+end block: "endblock"
+
+string

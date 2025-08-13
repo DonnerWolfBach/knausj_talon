@@ -19,7 +19,7 @@ code_languages = [
     # Language("bash", "bash", ["sh", "bashbook"]),
     Language("batch", "batch", ["bat"]),
     # Language("c", "see", ["c", "h", "cpp", "hpp", "in"]), # I am only using cpp!
-    # Language("cmake", "see make", ["cmake"]),
+    Language("cmake", "see make", ["cmake"]),
     Language("csharp", "see sharp", ["cs"]),
     Language("css", "c s s", ["css"]),
     # Language("elisp", "elisp", ["el"]),
