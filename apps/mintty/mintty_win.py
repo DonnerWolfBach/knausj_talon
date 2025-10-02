@@ -3,13 +3,19 @@ import subprocess
 from talon import Context, Module, actions, settings, ui
 
 mod = Module()
+# old capture - did not include git bash
+# TODO: solve cleanrer
+# mod.apps.mintty = """
+# os: windows
+# and app.name: Terminal
+# os: windows
+# and app.name: mintty.exe
+# """
+# new captuere: includes git bash
 mod.apps.mintty = """
 os: windows
-and app.name: Terminal
-os: windows
-and app.name: mintty.exe
+and app.exe: mintty.exe
 """
-
 
 ctx = Context()
 ctx.matches = r"""
