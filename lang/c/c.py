@@ -29,6 +29,9 @@ ctx.lists["self.c_keywords"] = {
     "static": "static",
     "volatile": "volatile",
     "register": "register",
+    # actually cpp
+    "const expr": "constexpr",
+    "constant expression":"constexpr",
 }
 
 ctx.lists["self.stdint_types"] = {
@@ -63,6 +66,8 @@ ctx.lists["self.c_types"] = {
     "union": "union",
     "float": "float",
 }
+
+ctx.lists["user.code_type"] = ctx.lists["self.c_types"]
 
 ctx.lists["user.code_libraries"] = {
     "assert": "assert.h",

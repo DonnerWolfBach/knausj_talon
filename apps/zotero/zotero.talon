@@ -11,3 +11,6 @@ item create: key(ctrl-shift-n)
 note create: key(ctrl-shift-o)
 item delete: key(delete)
 
+import: key(ctrl-shift-i)
+import clipboard: key(ctrl-shift-alt-i)
+

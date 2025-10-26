@@ -12,3 +12,9 @@ go tasks: user.thunderbird_mod("shift-d")
 # open windows
 (open address [book] | address book | open contacts): user.thunderbird_mod("shift-b")
 dev tools: user.thunderbird_mod("shift-i")
+
+# quick folder move extension: https://github.com/kewisch/quickmove-extension
+# mac
+# quick folder move: key(ctrl-shift-m)
+# win and linux
+quick folder move: key(ctrl-shift-n)
