@@ -1,7 +1,7 @@
-gamepad(left_xy:repeat):
-    x = x * 20
-    y = y * -60
-    mouse_scroll(y, x)
+# gamepad(left_xy:repeat):
+    # x = x * 20
+    # y = y * -60
+ #     mouse_scroll(y, x)
 
 # ps4 arrows
 gamepad(dpad_up:down): key("up:down")
