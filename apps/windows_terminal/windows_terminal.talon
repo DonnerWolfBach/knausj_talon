@@ -40,3 +40,6 @@ find it <phrase>$:
 
 # to open specific terminal profiles
 profile <number_small>: key("ctrl-shift-{number_small}")
+
+[mark | copy] mode: key("ctrl-shift-m")
+
