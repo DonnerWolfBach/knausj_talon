@@ -32,3 +32,19 @@ not speech.engine: dragon
     user.help_hide()
     user.mouse_sleep()
     speech.disable()
+
+
+# TODO: make these toggle
+# ps4 options
+# key(f7) | 
+# key(f23): 
+key(f7):
+    speech.disable()
+    print("muted via function key")
+
+# ps4 share
+# key(f9) | 
+# key(f24):
+key(f9):  
+    speech.enable()
+    print("UNmuted via function key")
