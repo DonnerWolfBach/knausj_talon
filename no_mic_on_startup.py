@@ -29,7 +29,7 @@ def on_launch():
             # PowerShell command with -NoExit to keep the window open
             command = f'Get-Content -Path "{log_file_path}" -Tail 50 -Wait; pause'
 
-            subprocess.run(
+            subprocess.Popen(
                 ["powershell", "-NoExit", "-Command", command],
                 shell=True,
                 creationflags=subprocess.DETACHED_PROCESS,
