@@ -17,17 +17,26 @@ def on_launch():
     if platform.system() == "Windows":
 
         try:
-            log_file_path = r"~/AppData\Roaming\talon\talon.log"
-
-            command = f'Get-Content -Path "{log_file_path}" -Tail 50 -Wait'
-
             import subprocess
+            import os
+            # Expand the user's home directory
+            home_dir = os.path.expanduser("~")
+            log_file_path = os.path.join(home_dir, "AppData", "Roaming", "talon", "talon.log")
+
+
+            print("Log File exists:", os.path.exists(log_file_path))
+
+            # PowerShell command with -NoExit to keep the window open
+            command = f'Get-Content -Path "{log_file_path}" -Tail 50 -Wait; pause'
+
             subprocess.run(
-                ["powershell", "-Command", command], 
-                check=True,
+                ["powershell", "-NoExit", "-Command", command],
+                shell=True,
                 creationflags=subprocess.DETACHED_PROCESS,
-                close_fds=True  
-                )
+                close_fds=True
+            )
+            print("Success opening log file")
+            
         except Exception as e:
             print(f"An error occurred when trying to open the logs: {e}")
 
