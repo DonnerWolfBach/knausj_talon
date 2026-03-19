@@ -37,8 +37,13 @@ not speech.engine: dragon
 # TODO: make these toggle
 # ps4 options
 # key(f7) | 
-# key(f23): 
-key(f9):
+# key(f23):
+
+key(f9:down):
+    speech.enable()
+    print("temporarily Unmuted via function key")  
+
+key(f9:up):
     speech.disable()
     print("muted via function key")
 
