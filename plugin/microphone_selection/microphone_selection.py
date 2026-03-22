@@ -61,6 +61,10 @@ class Actions:
             actions.sound.set_microphone(microphone_device_list[index - 1])
             app.notify(f"Activating microphone: {microphone_device_list[index - 1]}")
             gui.hide()
+        else:
+            s = f"Invalid Microphone number: {index}"
+            print(s)
+            actions.app.notify(s)
 
 
 def on_ready():
