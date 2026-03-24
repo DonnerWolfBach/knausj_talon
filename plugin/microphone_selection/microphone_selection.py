@@ -67,7 +67,10 @@ class Actions:
             actions.app.notify(s)
 
     def microphone_next():
-        """Select the next microphone in the list"""
+        """Select the next microphone in the list
+        TODO: fix bug where the microphones Between the default entry and what is the default are jumped over because setting it to the default 
+        makes actions.sound.microphones() return the name of the default, not 'System default'
+        """
         current_microphone_name : str = actions.sound.active_microphone()
         # print(f"{current_microphone_name=}")
         # print(f"{microphone_device_list=}")
