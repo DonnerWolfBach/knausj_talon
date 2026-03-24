@@ -66,6 +66,22 @@ class Actions:
             print(s)
             actions.app.notify(s)
 
+    def microphone_next():
+        """Select the next microphone in the list"""
+        current_microphone_name : str = actions.sound.active_microphone()
+        print(f"{current_microphone_name=}")
+        print(f"{microphone_device_list=}")
+        # use microphone_device_list over actions.sound.microphones for same sorting with gui
+        idx : int = microphone_device_list.index(current_microphone_name)
+        print(f"{idx=}")
+        new_microphone_index = idx+1 
+        if new_microphone_index == len(actions.sound.microphones()):
+            new_microphone_index = 0
+        print(f"{new_microphone_index=}")
+        new_microphone_name = microphone_device_list[new_microphone_index]
+        result = actions.sound.set_microphone(new_microphone_name)
+        print(f"{str(result)=}")
+
 
 def on_ready():
     ctx.register("devices_changed", devices_changed)
