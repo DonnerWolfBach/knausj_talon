@@ -129,8 +129,8 @@ def on_draw(c: SkiaCanvas):
             Point2d(x, y), radius, [color_text, color_text]
         )
         text = current_microphone
-        if(app.platform == "windows" and "(" in text ):
-            text = text.split("(")[1]
+        # if(app.platform == "windows" and "(" in text ):
+        #    text = text.split("(")[1]
 
         text = text[:2]
 
