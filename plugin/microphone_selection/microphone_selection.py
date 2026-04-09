@@ -78,6 +78,12 @@ class Actions:
         idx : int = microphone_device_list.index(current_microphone_name)
         # print(f"{idx=}")
         new_microphone_index = idx+1 
+
+        # skip Over the standard advice to avoid bug
+        if new_microphone_index == 1:
+            new_microphone_index = 2
+
+        #  at the end of the list go back to the star
         if new_microphone_index == len(actions.sound.microphones()):
             new_microphone_index = 0
         # print(f"{new_microphone_index=}")
