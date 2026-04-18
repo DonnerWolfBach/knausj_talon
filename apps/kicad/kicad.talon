@@ -5,6 +5,9 @@ and app.exe: /^kicad\.exe$/i
 -
 # TODO: generalize above
 
+# does not actually have command search, but I mapped it to hotkey thing
+tag(): user.command_search
+
 Refresh | reload it: key(f5)
 
 # KiCad Schematic Editor Voice Commands
