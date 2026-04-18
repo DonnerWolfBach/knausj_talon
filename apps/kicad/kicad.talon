@@ -31,3 +31,7 @@ edit properties: key(e)
 edit value: key(v)
 assign footprint: key(f)
 
+Preferences | Settings: key(ctrl-,)
+
+# Custom Hotkeys
+draw rectangle: key(ctrl-alt-shift-r)
