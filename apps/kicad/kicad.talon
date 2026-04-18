@@ -1,12 +1,18 @@
-os: windows
-and app.name: KiCad EDA 10.0.1
-os: windows
-and app.exe: /^kicad\.exe$/i
+app.name: /KiCad*/i
 -
 # TODO: generalize above
 
+settings():
+    # key_wait = 9.0
+    # key_hold = 64
+    # insert_wait = 1
+
 # does not actually have command search, but I mapped it to hotkey thing
 tag(): user.command_search
+
+troubleshoot this: sim("please")
+hotkey search: key(ctrl-f1)
+
 
 Refresh | reload it: key(f5)
 
@@ -25,7 +31,3 @@ edit properties: key(e)
 edit value: key(v)
 assign footprint: key(f)
 
-
-# Workflow commands
-annotate schematic: key(alt-t a)  # Adjust based on your menu shortcut
-run erc: key(alt-i e)              # Adjust based on your menu shortcut
