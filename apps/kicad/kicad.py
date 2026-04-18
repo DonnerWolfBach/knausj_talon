@@ -19,5 +19,5 @@ class UserActions:
     def command_search(command: str = ""):
         actions.key("ctrl-f1")
         if command != "":
-            # actions.sleep("5000ms")
+            actions.sleep("3000ms")
             actions.insert(command)

@@ -8,9 +8,9 @@ settings():
     # insert_wait = 1
 
 # does not actually have command search, but I mapped it to hotkey thing
+# TODO: fix, does not work reliably
 tag(): user.command_search
 
-troubleshoot this: sim("please")
 hotkey search: key(ctrl-f1)
 
 
