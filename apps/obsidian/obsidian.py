@@ -8,6 +8,7 @@ lang_ctx.matches = r"""
 app: obsidian
 not tag: user.code_language_forced
 """
+# TODO: check whether I can get rid of lang_ctx
 
 
 @lang_ctx.action_class("code")

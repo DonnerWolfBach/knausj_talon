@@ -9,6 +9,9 @@ lang_ctx.matches = r"""
 app: logseq
 not tag: user.code_language_forced
 """
+# TODO: check whether I can get rid of lang_ctx
+
+
 @ctx.action_class("user")
 class UserActions:
     def command_search(command: str = ""):
