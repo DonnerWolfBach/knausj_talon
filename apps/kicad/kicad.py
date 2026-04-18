@@ -6,8 +6,7 @@ mod = Module()
 mod.apps.kicad = "app.exe: KiCad"
 
 ctx = Context()
-lang_ctx = Context()
-lang_ctx.matches = r"""
+ctx.matches = r"""
 app.name: /KiCad*/i
 
 """
@@ -19,5 +18,5 @@ class UserActions:
     def command_search(command: str = ""):
         actions.key("ctrl-f1")
         if command != "":
-            actions.sleep("3000ms")
+            actions.sleep("500ms")
             actions.insert(command)
