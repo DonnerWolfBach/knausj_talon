@@ -1,6 +1,10 @@
 list: user.unix_utility
 -
 ark: awk
+apt
+apt install
+apt update
+apt upgrade
 base sixty four decode: base64 -d
 base sixty four: base64
 concat: cat
@@ -24,6 +28,7 @@ dig
 disk usage human: du -h
 disk usage: du
 echo
+exit
 false
 find
 grab here: grep -Hirn
@@ -41,14 +46,21 @@ list: ls
 link soft: ln -s
 link: ln
 M D five sum: md5sum
+manual: man
+man
 make dear: mkdir
 make directory: mkdir
 move: mv
+mount
 paste
+ping
 print format: printf
 pyreverse
 python reverse: pyreverse
 python
+process: ps
+process kill: pkill
+process ox: ps aux
 work dear: pwd
 remove: rm
 reverse: rev
@@ -69,6 +81,7 @@ sqlite: sqlite3
 S S H: ssh
 S S H key generator: ssh-keygen
 stat
+sudo    
 pseudo: sudo
 super user do: sudo
 tail follow: tail -f
@@ -82,6 +95,8 @@ translate delete: tr -d
 translate: tr
 tree
 true
+umount
+unmount: umount
 unique count: uniq -c
 unique: uniq
 word count characters: wc -c
@@ -89,3 +104,7 @@ word count lines: wc -l
 word count: wc
 who
 who am I: whoami
+
+vi
+we eye: vi
+vim

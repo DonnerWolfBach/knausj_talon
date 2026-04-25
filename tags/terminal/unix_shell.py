@@ -10,6 +10,19 @@ tag: user.generic_unix_shell
 ctx.tags = ["user.unix_utilities"]
 
 
+@ctx.action_class("edit")
+class EditActions:
+    def paste():
+        actions.key("ctrl-shift-v")
+
+    def copy():
+        actions.key("ctrl-shift-c")
+
+    def find(text: str = None):
+        actions.key("ctrl-shift-f")
+        if text:
+            actions.insert(text)
+
 @ctx.action_class("user")
 class Actions:
     # Implements the functions from terminal.py for unix shells
