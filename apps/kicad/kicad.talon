@@ -25,6 +25,9 @@ draw wire: key(w)
 draw bus: key(b)
 place net label: key(l)
 place global label: key(ctrl-l)
+place no connect: key(q)
+
+draw text: key(t)
 
 # Edit commands
 edit properties: key(e)
