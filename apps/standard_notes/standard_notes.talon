@@ -4,6 +4,8 @@ app: standard_notes
 settings():
     # Necessary to stop commands like 'slap' getting jumbled
     key_wait = 9.0
+
+tag(): user.command_search
     
 # these two do not work in librewolf for some reason
 note create: key("alt-shift-n")
