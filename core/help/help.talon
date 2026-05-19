@@ -16,6 +16,8 @@ help help: user.help_search("help")
 help scope$: user.help_scope_toggle()
 help snip: user.help_list("user.snippet")
 help website: user.help_list("user.website")
+help search engine: user.help_list("user.search_engine")
+
 
 (help formatters | help format | format help):
     user.help_formatters(user.get_formatters_words(), false)
