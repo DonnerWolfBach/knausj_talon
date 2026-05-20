@@ -5,6 +5,8 @@ and app.exe: /^virtualboxvm\.exe$/i
 - 
 # This is for the window that the virtual machine is actually running in/showing the running virtual machien
 
+# host key combo to escape the capturing of the keyboard
+host key combo: key(rctrl)
 
 # For EIT Praktikum
 
