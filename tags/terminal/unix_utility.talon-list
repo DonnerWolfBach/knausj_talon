@@ -50,6 +50,7 @@ manual: man
 man
 make dear: mkdir
 make directory: mkdir
+mini cube: minikube
 move: mv
 mount
 paste

@@ -16,6 +16,7 @@ tag(): user.docker
 tag(): user.kubectl
 tag(): user.generic_unix_shell
 tag(): user.git
+tag(): user.tabs
 
 it's admin: "itsadmin"
 efficient (password | username): "itsadmin"
