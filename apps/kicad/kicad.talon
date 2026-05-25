@@ -13,6 +13,8 @@ tag(): user.command_search
 
 hotkey search: key(ctrl-f1)
 
+tag(): user.find_and_replace
+# Note: find/hunt next only works when searching window is closed 
 
 Refresh | reload it: key(f5)
 

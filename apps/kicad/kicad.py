@@ -20,3 +20,9 @@ class UserActions:
         if command != "":
             actions.sleep("500ms")
             actions.insert(command)
+
+    def replace(text: str):
+        actions.key("ctrl-alt-f")
+        if text:
+            actions.sleep("500ms")
+            actions.insert(text)
