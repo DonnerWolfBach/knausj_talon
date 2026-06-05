@@ -99,8 +99,7 @@ zoom to fit: key(f)
 # Display Features
 toggle centre line: key(') 
 # Show or hide the centre line
-toggle time rulers: key(
-#) 
+toggle time rulers: key(#) 
 # Show or hide all time rulers
 hide overlays: key(0) 
 # Hide times, layer names, and scale
