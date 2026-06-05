@@ -40,3 +40,8 @@ Preferences | Settings: key(ctrl-,)
 
 # Custom Hotkeys
 draw rectangle: key(ctrl-alt-shift-r)
+
+# PCB Editor Commands
+route [single] track: key(x)
+three De Viewer: key(alt-3)
+fill [all] zones: key(b)
