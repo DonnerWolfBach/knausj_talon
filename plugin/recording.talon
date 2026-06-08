@@ -1,7 +1,7 @@
 start recording:
-    user.talon_sleep()
-    user.command_history_clear()
-    user.clear_subtitles()
+    speech.disable()
+    user.history_clear()
+    # user.clear_subtitles() # does not seem relevant in community/knausj
     user.recording_start()
 
 stop recording:
