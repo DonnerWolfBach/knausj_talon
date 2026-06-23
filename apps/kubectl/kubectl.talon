@@ -66,6 +66,10 @@ cube {user.kubectl_action} [{user.kubectl_object}] [{user.kubectl_output_format_
     if kubectl_output_format_object: insert(" -o {kubectl_output_format_object}")
     insert(" ")
 
+output [{user.kubectl_output_format_object}]:
+    insert("-o ")
+    insert(kubectl_output_format_object)
+
 cube detach:
     key("ctrl-p")
     key("ctrl-q")
