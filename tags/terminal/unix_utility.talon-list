@@ -100,6 +100,7 @@ umount
 unmount: umount
 unique count: uniq -c
 unique: uniq
+watch
 word count characters: wc -c
 word count lines: wc -l
 word count: wc
