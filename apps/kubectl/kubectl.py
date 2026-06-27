@@ -24,7 +24,8 @@ ctx.lists["self.kubectl_object"] = (
     "replicasets",
     "daemonsets",
     "configmaps",
-    "secrets"
+    "secrets",
+    "endpoints",
 )
 
 mod.list("kubectl_output_format_object", desc="-o parameters, so output formatters")
