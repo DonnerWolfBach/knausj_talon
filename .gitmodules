@@ -7,3 +7,6 @@
 [submodule "plugin/talon-ai-tools"]
 	path = plugin/talon-ai-tools
 	url = https://github.com/C-Loftus/talon-ai-tools.git
+[submodule "plugin/talon_german"]
+	path = plugin/talon_german
+	url = https://github.com/DonnerWolfBach/talon_german
