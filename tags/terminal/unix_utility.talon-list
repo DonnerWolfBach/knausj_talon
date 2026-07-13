@@ -45,6 +45,7 @@ lisa: ls
 list: ls
 link soft: ln -s
 link: ln
+list block: lsblk
 M D five sum: md5sum
 manual: man
 man

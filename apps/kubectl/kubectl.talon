@@ -4,6 +4,7 @@ and tag: user.kubectl
 cube [control]: "kubectl "
 
 cube create: "kubectl create "
+cube create [from] file: "kubectl create -f "
 cube expose: "kubectl expose "
 cube run: "kubectl run "
 cube set: "kubectl set "

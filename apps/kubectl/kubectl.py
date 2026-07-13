@@ -10,7 +10,7 @@ tag: user.kubectl
 """
 
 mod.list("kubectl_action", desc="actions performed by kubectl")
-ctx.lists["self.kubectl_action"] = ("get", "delete", "describe", "label")
+ctx.lists["self.kubectl_action"] = ("get", "delete", "describe", "label","edit")
 
 mod.list("kubectl_object", desc="objects performed by kubectl")
 ctx.lists["self.kubectl_object"] = (
@@ -26,6 +26,9 @@ ctx.lists["self.kubectl_object"] = (
     "configmaps",
     "secrets",
     "endpoints",
+    "ingress",
+    "persistentvolumes",
+    "persistentvolumeclaims",
 )
 
 mod.list("kubectl_output_format_object", desc="-o parameters, so output formatters")
