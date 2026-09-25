@@ -1,6 +1,5 @@
-
 os: windows
-and app.exe: /^mstsc\.exe$/i
+and app.exe: /^mstsc\.exe$/
 - 
 
 # this is for remote desktop connections
