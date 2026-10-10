@@ -1,4 +1,4 @@
-from talon import Context, Module, actions, cron, imgui, app
+from talon import Context, Module, actions, app, cron, imgui
 
 from ...core.user_settings import track_csv_rows
 
@@ -114,6 +114,9 @@ class Actions:
         TODO: fix bug where the microphones Between the default entry and what is the default are jumped over because setting it to the default
         makes actions.sound.microphones() return the name of the default, not 'System default'
         """
+        # TODO: check later whether this is still necessar
+        update_microphone_list()
+
         current_microphone_name: str = actions.sound.active_microphone()
         # print(f"{current_microphone_name=}")
         # print(f"{microphone_device_list=}")
@@ -129,15 +132,9 @@ class Actions:
         #  at the end of the list go back to the star
         if new_microphone_index == len(actions.sound.microphones()):
             new_microphone_index = 0
-        # print(f"{new_microphone_index=}")
+        print(f"{new_microphone_index=}")
         new_microphone_name = microphone_device_list[new_microphone_index]
         result = actions.sound.set_microphone(new_microphone_name)
-        # print(f"{str(result)=}")
+        print(f"{str(result)=}")
 
-
-def on_ready():
-    ctx.register("devices_changed", devices_changed)
-    update_microphone_list()
-
-
-app.register("ready", on_ready)
+app.register("launch",update_microphone_list)
