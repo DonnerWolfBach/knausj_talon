@@ -6,7 +6,7 @@ and app.exe: firefox.exe
 -
 
 fraction:
-    "\\frac"
+    insert("\\frac")
     key(enter)
     key(right)
     key(left)
@@ -18,7 +18,7 @@ exactly if: "\\iff "
 multiply: "\\cdot "
 separator: "\\\\"
 new equation:
-    "\\[\\]"
+    insert("\\[\\]")
     key(left)
     key(left)
 

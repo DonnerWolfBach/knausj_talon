@@ -1,4 +1,4 @@
-sharpness character: "ß"
-austrian empire: "ö"
-egyptian pyramid: "ä"
-superman: "ü"
+sharpness character: "ï¿½"
+austrian empire: "ï¿½"
+egyptian pyramid: "ï¿½"
+superman: "ï¿½"

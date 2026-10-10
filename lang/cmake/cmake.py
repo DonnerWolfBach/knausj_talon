@@ -1,8 +1,4 @@
-import re
-
-from talon import Context, Module, actions, settings
-
-from ..tags.operators import Operators
+from talon import Context, Module, actions
 
 mod = Module()
 ctx = Context()

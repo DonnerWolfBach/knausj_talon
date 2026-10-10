@@ -2,6 +2,7 @@
 # see also files like "calling_spectacle"
 os: linux
 -
+
 # krunner
 (ka | k | key) runner: key(alt-space)
 

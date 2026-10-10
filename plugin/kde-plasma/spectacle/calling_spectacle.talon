@@ -1,5 +1,6 @@
 os: linux
 -
+
 # this is for calling spectacle when spectacle is not focused right now
 # spectacle is a kde plasma standout app and may not work on other desktops
 

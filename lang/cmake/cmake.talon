@@ -1,5 +1,6 @@
 code.language: cmake
 -
+
 # TODO: check how defining functions in cmake work and whether annotating them is possible
 tag(): user.code_functions
 

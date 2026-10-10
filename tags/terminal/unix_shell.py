@@ -78,6 +78,6 @@ class Actions:
     def terminal_pipe_to_clipboard():
         """Adds the command that pipes a commands output into the clipboard."""
         actions.insert("| xsel -ib")
-        
+
     def terminal_escape_string(string: str) -> str:
         return string.replace(" ", r"\ ")

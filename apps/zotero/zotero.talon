@@ -1,5 +1,6 @@
 app.name: Zotero
 -
+
 # TODO: add mac support: https://www.zotero.org/support/kb/keyboard_shortcuts
 
 tag(): user.tabs

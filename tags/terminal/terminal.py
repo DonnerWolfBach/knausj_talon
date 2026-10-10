@@ -39,7 +39,7 @@ class Actions:
 
     def terminal_pipe_to_clipboard():
         """Adds the command that pipes a commands output into the clipboard."""
-        
+
     def terminal_escape_string(string: str) -> str:
         """Escapes a string for a given terminal"""
         return f'"{string}"'

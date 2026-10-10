@@ -1,7 +1,7 @@
 # gamepad(left_xy:repeat):
     # x = x * 20
     # y = y * -60
- #     mouse_scroll(y, x)
+    #     mouse_scroll(y, x)
 
 # ps4 arrows
 gamepad(dpad_up:down): key("up:down")
@@ -25,7 +25,6 @@ gamepad(start): speech.disable()
 # ps4 share
 gamepad(select): speech.enable()
 
-
 gamepad(r1:down): key("shift:down")
 gamepad(r1:up): key("shift:up")
 gamepad(l1:down): key("alt:down")
@@ -34,7 +33,6 @@ gamepad(r2:down): key("ctrl:down")
 gamepad(r2:up): key("ctrl:up")
 gamepad(l2:down): key("super:down")
 gamepad(l2:up): key("super:up")
-
 
 # gamepad(right_xy:repeat):
 #     mx = mouse_x()

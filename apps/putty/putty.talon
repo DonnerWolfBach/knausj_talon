@@ -3,6 +3,7 @@ and app.name: SSH, Telnet, Rlogin, and SUPDUP client
 os: windows
 and app.exe: putty.exe
 -
+
 # makes the commands in generic_terminal available
 tag(): terminal
 

@@ -4,7 +4,7 @@ allows me to preboot it without accidential recognitions
 
 """
 
-from talon import Context, Module, actions, app, settings
+from talon import actions, app
 
 
 def on_launch():
@@ -15,7 +15,6 @@ def on_launch():
 
     print("trying to open the logs in a seperate window")
     if platform.system() == "Windows":
-
         try:
             import os
             import subprocess

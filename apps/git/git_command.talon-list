@@ -47,14 +47,14 @@ rerere status
 reset
 restore
 revert
-<<<<<<< HEAD:apps/git/git_commands.csv
+<<<<<<< HEAD: apps/git/git_commands.csv
 rev-list --max-parents=0 HEAD, first
 rm, remove
 shortlog,short log
 =======
 remove: rm
 short log: shortlog
->>>>>>> 6e64ea17bb34ffed30bd6b6afd953aeb89e25ba8:apps/git/git_command.talon-list
+>>>>>>> 6e64ea17bb34ffed30bd6b6afd953aeb89e25ba8: apps/git/git_command.talon-list
 show
 sparse checkout: sparse-checkout
 stash

@@ -1,6 +1,7 @@
 app: LyX.exe
 app: LyX
 -
+
 tag(): user.maths
 {user.tex_symbols}:
     key(\)
@@ -44,7 +45,7 @@ square root: key(alt-m s)
 generic root: key(alt-m r)
 fraction: key(alt-m f)
 over: key(shift-left alt-m f down)
-(super script | to the power): key(^)
+super script | to the power: key(^)
 sub script: key(_)
 squared: key(^ 2 right)
 cubed: key(^ 3 right)

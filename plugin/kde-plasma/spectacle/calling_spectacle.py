@@ -12,7 +12,7 @@ class UserActionsLinux:
 
 """
 
-from talon import Context, Module, actions, app, clip, cron, screen, ui
+from talon import Context, actions
 
 ctx_linux = Context()
 ctx_linux.matches = r"""
