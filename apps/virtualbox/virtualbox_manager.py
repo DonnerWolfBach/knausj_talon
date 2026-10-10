@@ -8,7 +8,6 @@ app: virtualbox_manager
 """
 
 
-
 def mouse_safe_menu_access(func):
     """Decorator to disable mouse control before accessing a menu and re-enable afterwards."""
 
@@ -42,7 +41,7 @@ def vm_power_off():  # type: () -> None
 @mod.action_class
 class Actions:
     # Generic menu interaction code for talon
-        # Generic menu interaction code for talon
+    # Generic menu interaction code for talon
     def menu_key(key: str, release: bool = True, count: int = 1):
         """Access some menu entry via alt-based key press."""
         actions.key("alt:down")
