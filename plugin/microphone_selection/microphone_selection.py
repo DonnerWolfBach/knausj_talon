@@ -1,4 +1,4 @@
-from talon import Context, Module, actions, cron, imgui
+from talon import Context, Module, actions, cron, imgui, app
 
 from ...core.user_settings import track_csv_rows
 
