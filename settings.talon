@@ -1,5 +1,4 @@
 settings():
-
     # Adjust the scale of the imgui to my liking
     imgui.scale = 1.2
 
@@ -107,7 +106,6 @@ settings():
     # 'size aware' keeps absolute window size the same, except full-height or
     # -width windows are resized to stay full-height/width.
     # user.window_snap_screen = "size aware"
-
 
     # Mode enabled on Talon launch (command by default; dictation, mixed or sleep are other options)
     # user.initial_mode = "sleep"

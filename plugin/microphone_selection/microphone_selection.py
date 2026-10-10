@@ -137,4 +137,5 @@ class Actions:
         result = actions.sound.set_microphone(new_microphone_name)
         print(f"{str(result)=}")
 
-app.register("launch",update_microphone_list)
+
+app.register("launch", update_microphone_list)
