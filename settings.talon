@@ -108,14 +108,10 @@ settings():
     # -width windows are resized to stay full-height/width.
     # user.window_snap_screen = "size aware"
 
-<<<<<<< HEAD
-# uncomment tag to enable mouse grid
-tag(): user.mouse_grid_enabled
-=======
+
     # Mode enabled on Talon launch (command by default; dictation, mixed or sleep are other options)
     # user.initial_mode = "sleep"
 
->>>>>>> db670998e8cac3d246a59672918c34441704a1af
     # Puts Talon into sleep mode if no commands are spoken for a defined period of time.
 user.listening_timeout_minutes = 3
 
