@@ -1,6 +1,7 @@
 app: windows_terminal
 app: windowsterminal.exe
 -
+
 # makes the commands in terminal.talon available
 tag(): terminal
 
@@ -19,7 +20,6 @@ tag(): user.docker
 tag(): user.npm
 
 tag(): user.tabs
-# TODO: file_manager
 tag(): user.splits
 
 settings open: key(ctrl-,)

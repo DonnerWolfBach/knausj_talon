@@ -1,10 +1,15 @@
 tag: terminal
 -
+
+settings():
+    # pasting into terminal emulators may trigger "executable code" warnings
+    user.paste_to_insert_threshold = -1
+
 # tags should be activated for each specific terminal in the respective talon file
 
 tag(): user.address
 
-lisa: user.terminal_list_directories()
+lisa [dir] [<user.text>]: user.terminal_list_directories(text or "")
 lisa all: user.terminal_list_all_directories()
 lisa details: user.terminal_list_all_directories_detailed()
 katie [dir]: user.terminal_change_directory("")

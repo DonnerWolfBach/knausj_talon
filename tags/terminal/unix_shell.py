@@ -1,3 +1,5 @@
+from typing import Optional
+
 from talon import Context, Module, actions
 
 ctx = Context()
@@ -28,9 +30,8 @@ class EditActions:
 class Actions:
     # Implements the functions from terminal.py for unix shells
 
-    def terminal_list_directories():
-        """Lists directories"""
-        actions.insert("ls")
+    def terminal_list_directories(path: Optional[str] = None):
+        actions.insert(f"ls {path or ''}")
         actions.key("enter")
 
     def terminal_list_all_directories():
@@ -77,3 +78,6 @@ class Actions:
     def terminal_pipe_to_clipboard():
         """Adds the command that pipes a commands output into the clipboard."""
         actions.insert("| xsel -ib")
+        
+    def terminal_escape_string(string: str) -> str:
+        return string.replace(" ", r"\ ")

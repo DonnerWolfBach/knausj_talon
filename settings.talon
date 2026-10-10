@@ -62,12 +62,22 @@ settings():
     # Set the amount to scroll left/right
     user.mouse_wheel_horizontal_amount = 40
 
-    # Mouse grid and friends put the number one on the bottom left (vs on the top left)
+    # Set the duration to hold mouse clicks in milliseconds. 0 means no hold.
+    # In some full-screen applications, particularly games, mouse clicks may not
+    # be recognized unless held for a short duration.  If this occurs, try
+    # starting with a setting of 16.
+    user.mouse_click_hold = 0
+
+    # If `true`, start mouse grid numbering on the bottom left (vs. top left)
     user.grids_put_one_bottom_left = true
-    # the number of lines of command history to display by default
+
+    # If `true`, show a zoomed in version of the mouse grid when it becomes sufficiently small
+    user.grid_show_zoomed = true
+
+    # Set the default number of command history lines to display
     user.command_history_display = 20
-    # the number of lines of command history to keep in total;
-    # "command history more" to display all of them, "command history less" to restore
+
+    # Set the total number of command history lines to display
     user.command_history_size = 50
 
     # Set the time window size for to for pop_twice_to_sleep and pop_twice_to_repeat. By default, the pops must be more than 0.1 seconds apart and less then 0.3 seconds, to reduce false positives
@@ -83,6 +93,7 @@ settings():
 
     # Uncomment to insert text longer than 10 characters (customizable) by pasting from
     # the clipboard. This is often faster than typing.
+    # Note: some contexts (e.g. the terminal tag) may override this global setting.
     # user.paste_to_insert_threshold = 10
 
     # Uncomment to enable context-sensitive dictation. This determines how to format
@@ -97,13 +108,25 @@ settings():
     # -width windows are resized to stay full-height/width.
     # user.window_snap_screen = "size aware"
 
+<<<<<<< HEAD
 # uncomment tag to enable mouse grid
 tag(): user.mouse_grid_enabled
+=======
+    # Mode enabled on Talon launch (command by default; dictation, mixed or sleep are other options)
+    # user.initial_mode = "sleep"
+
+>>>>>>> db670998e8cac3d246a59672918c34441704a1af
     # Puts Talon into sleep mode if no commands are spoken for a defined period of time.
 user.listening_timeout_minutes = 3
 
     # Time in seconds to wait for the clipboard to change when trying to get selected text
     # user.selected_text_timeout = 0.25
+
+    # Time in seconds to sleep after inserting text with `insert_between` (e.g. when using paired delimiters like 'box' or 'round'), before moving the cursor back. Useful to set on a per-application basis, to prevent moving the moving the cursor before text is inserted.
+    # user.insert_between_wait = 0
+
+    # If deprecated commands should throw an exception, which stops the commands from running. You might find this helps you learn the new replacement commands faster.
+    # user.strict_command_deprecation = true
 
 # Uncomment to enable the curse yes/curse no commands (show/hide mouse cursor).
 # See issue #688 for more detail: https://github.com/talonhub/community/issues/688

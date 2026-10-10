@@ -1,5 +1,10 @@
+from typing import Optional
+
 from talon import Context, Module, actions, settings
 
+from ...core.described_functions import (
+    create_described_insert_between,
+)
 from ..tags.operators import Operators
 
 mod = Module()
@@ -33,7 +38,7 @@ ctx.lists["user.code_libraries"] = {
 }
 
 
-@mod.capture(rule="{self.lua_functions}")
+@mod.capture(rule="{user.lua_functions}")
 def lua_functions(m) -> str:
     "Returns a string"
     return m.lua_functions
@@ -46,9 +51,9 @@ def lua_functions(m) -> str:
 
 # NOTE: < 5.3 assumes Lua BitOp usage
 #       > 5.2 assumes native bitwise operators
-# TODO: Possibly add settings to define which library to use, as 5.2
-# includes bit32. Neovim uses luajit, which uses Lua BitOp
+# ALSO NOTE: The documentation strings for these functions are used by help operators
 def code_operator_bitwise_and():
+    "Insert & or library call based on user.lua_version"
     if settings.get("user.lua_version") > 5.2:
         actions.insert(" & ")
     else:
@@ -56,6 +61,7 @@ def code_operator_bitwise_and():
 
 
 def code_operator_bitwise_or():
+    "Insert | or library call based on user.lua_version"
     if settings.get("user.lua_version") > 5.2:
         actions.insert(" | ")
     else:
@@ -63,6 +69,7 @@ def code_operator_bitwise_or():
 
 
 def code_operator_bitwise_exclusive_or():
+    "Insert ~ or library call based on user.lua_version"
     if settings.get("user.lua_version") > 5.2:
         actions.insert(" ~ ")
     else:
@@ -70,6 +77,7 @@ def code_operator_bitwise_exclusive_or():
 
 
 def code_operator_bitwise_left_shift():
+    "Insert << or library call based on user.lua_version"
     if settings.get("user.lua_version") > 5.2:
         actions.insert(" << ")
     else:
@@ -77,6 +85,7 @@ def code_operator_bitwise_left_shift():
 
 
 def code_operator_bitwise_right_shift():
+    "Insert >> or library call based on user.lua_version"
     if settings.get("user.lua_version") > 5.2:
         actions.insert(" >> ")
     else:
@@ -85,7 +94,7 @@ def code_operator_bitwise_right_shift():
 
 operators = Operators(
     # code_operators_array
-    SUBSCRIPT=lambda: actions.user.insert_between("[", "]"),
+    SUBSCRIPT=create_described_insert_between("[", "]"),
     # code_operators_assignment
     ASSIGNMENT=" = ",
     # code_operators_bitwise
@@ -193,5 +202,15 @@ class UserActions:
     def code_insert_library(text: str, selection: str):
         substitutions = {"1": selection, "0": selection}
         actions.user.insert_snippet_by_name("importStatement", substitutions)
+
+    ##
+    # comment_block
+    ##
+    def code_comment_block(text: Optional[str] = None):
+        if text is None:
+            substitutions = {}
+        else:
+            substitutions = {"0": text}
+        actions.user.insert_snippet_by_name("commentMultilineBlock", substitutions)
 
     # non-tag related actions
