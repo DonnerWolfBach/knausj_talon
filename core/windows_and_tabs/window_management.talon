@@ -26,15 +26,12 @@ snap <user.running_applications> [screen] <number>:
 # right now for kde plasma/linux only
 # TODO: abstract and generalize that
 # TODO: fix issue where alt is not "unholded"/still set down or up
-task switcher open: 
+task switcher open:
     key(alt:down)
     key(tab)
 
-task switcher close:
-    key(alt:up)
+task switcher close: key(alt:up)
 
-task next:
-    key(tab)
+task next: key(tab)
 
-task last:
-    key(shift-tab)
+task last: key(shift-tab)

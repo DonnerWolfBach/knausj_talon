@@ -1,6 +1,5 @@
 app: firefox
 app: LibreWolf
-
 -
 tag(): browser
 tag(): user.tabs

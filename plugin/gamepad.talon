@@ -35,7 +35,7 @@ gamepad(r2:up): key("ctrl:up")
 gamepad(l2:down): key("super:down")
 gamepad(l2:up): key("super:up")
 
-    
+
 # gamepad(right_xy:repeat):
 #     mx = mouse_x()
     # my = mouse_y()

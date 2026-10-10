@@ -5,7 +5,6 @@ tag(): user.code_functions
 
 tag(): user.code_functions_common
 
-
 # TODO: check whether there is actual standards
 # so far just seeing camelCase in professional cmake book
 settings():
@@ -16,5 +15,4 @@ settings():
     user.code_protected_variable_formatter = "PRIVATE_CAMEL_CASE"
     user.code_public_variable_formatter = "PRIVATE_CAMEL_CASE"
 
-retrieve (variable | value): 
-    user.insert_between("${","}")
+retrieve (variable | value): user.insert_between("${", "}")

@@ -14,7 +14,7 @@ print window: key("ctrl-p")
 quit labview: key("ctrl-q")
 
 # Navigation
-(show |toggle) (front panel | block diagram): key("ctrl-e")
+(show | toggle) (front panel | block diagram): key("ctrl-e")
 tile windows: key("ctrl-t")
 find: key("ctrl-f")
 next instance: key("ctrl-g")

@@ -12,7 +12,6 @@ app.name: /KiCad*/i
 """
 
 
-
 @ctx.action_class("user")
 class UserActions:
     def command_search(command: str = ""):

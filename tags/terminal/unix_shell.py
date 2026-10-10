@@ -23,6 +23,7 @@ class EditActions:
         if text:
             actions.insert(text)
 
+
 @ctx.action_class("user")
 class Actions:
     # Implements the functions from terminal.py for unix shells

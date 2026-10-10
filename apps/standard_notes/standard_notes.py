@@ -13,6 +13,7 @@ ctx.matches = r"""
 app: standard_notes
 """
 
+
 @ctx.action_class("user")
 class UserActions:
     def command_search(command: str = ""):

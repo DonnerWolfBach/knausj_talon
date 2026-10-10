@@ -253,16 +253,15 @@ cell run: user.vscode("notebook.cell.execute")
 install local: user.vscode("workbench.extensions.action.installVSIX")
 preview markdown: user.vscode("markdown.showPreview")
 
-
-
 # PlatformIO
-(Arduino|Platform [i o]) (flash | upload): user.vscode("platformio-ide.uploadAndMonitor")
-(Arduino|Platform [i o]) (monitor | serial): user.vscode("platformio-ide.serialMonitor")
-(Arduino|Platform [i o]) compile: user.vscode("platformio-ide.build")
-
+(Arduino | Platform [i o]) (flash | upload):
+    user.vscode("platformio-ide.uploadAndMonitor")
+(Arduino | Platform [i o]) (monitor | serial):
+    user.vscode("platformio-ide.serialMonitor")
+(Arduino | Platform [i o]) compile: user.vscode("platformio-ide.build")
 
 # Foam/Loam/Logfoam
 # TOOD: move somewhere else
-block [reference | anchor |id] [<user.text>] [halt]:
-    key("^") 
+block [reference | anchor | id] [<user.text>] [halt]:
+    key("^")
     user.insert_formatted(text or "", "DASH_SEPARATED")

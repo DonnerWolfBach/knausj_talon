@@ -83,7 +83,7 @@ sqlite: sqlite3
 S S H: ssh
 S S H key generator: ssh-keygen
 stat
-sudo    
+sudo
 pseudo: sudo
 super user do: sudo
 tail follow: tail -f

@@ -146,7 +146,7 @@ def run_command(
         if args or return_command_output:
             raise Exception("Must use command-server extension for advanced commands")
         raise NoFileServerException("Communication directory not found")
-    
+
     request_path = communication_dir_path / "request.json"
     response_path = communication_dir_path / "response.json"
 
@@ -201,15 +201,13 @@ def run_command(
 
 def is_nixos():
     # Check if the /etc/os-release file exists and contains "nixos"
-    if os.path.isfile('/etc/os-release'):
-        with open('/etc/os-release') as f:
+    if os.path.isfile("/etc/os-release"):
+        with open("/etc/os-release") as f:
             os_release = f.read()
             return "ID=nixos" in os_release or "ID_LIKE=nixos" in os_release
 
     # Also, confirm if the /etc/nixos directory exists as further evidence
-    return os.path.isdir('/etc/nixos')
-
-
+    return os.path.isdir("/etc/nixos")
 
 
 def get_communication_dir_path():

@@ -19,6 +19,7 @@ class UserActions:
         if command != "":
             actions.insert(command)
 
+
 @lang_ctx.action_class("code")
 class CodeActions:
     def language():
