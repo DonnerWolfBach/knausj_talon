@@ -8,16 +8,6 @@ app: virtualbox_manager
 """
 
 
-# Generic menu interaction code for talon
-@mod.action_class
-class Actions:
-    def menu_key(key: str, release: bool = True, count: int = 1):
-        """Access some menu entry via alt-based key press."""
-        actions.key("alt:down")
-        actions.key(f"{key}:{count}")
-        if release:
-            actions.key("alt:up")
-
 
 def mouse_safe_menu_access(func):
     """Decorator to disable mouse control before accessing a menu and re-enable afterwards."""
@@ -51,6 +41,15 @@ def vm_power_off():  # type: () -> None
 
 @mod.action_class
 class Actions:
+    # Generic menu interaction code for talon
+        # Generic menu interaction code for talon
+    def menu_key(key: str, release: bool = True, count: int = 1):
+        """Access some menu entry via alt-based key press."""
+        actions.key("alt:down")
+        actions.key(f"{key}:{count}")
+        if release:
+            actions.key("alt:up")
+
     def machine_menu(release: bool = True):
         """Access the Machine menu."""
         actions.user.menu_key("m", release=release, count=3)
