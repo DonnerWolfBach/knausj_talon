@@ -68,8 +68,8 @@ operators = Operators(
     MATH_AND=" && ",
     MATH_OR=" || ",
     MATH_NOT=" not ",
-    MATH_IN=" in ",
-    MATH_NOT_IN=" not in ",
+    MATH_IN=" `elem` ",
+    MATH_NOT_IN=" `notElem` ",
 )
 
 def haskell_and_null_warning():
