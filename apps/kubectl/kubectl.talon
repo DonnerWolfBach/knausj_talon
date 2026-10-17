@@ -64,13 +64,12 @@ cube version: "kubectl version "
 cube {user.kubectl_action} [{user.kubectl_object}]:
     insert("kubectl {kubectl_action} ")
     insert(kubectl_object or "")
+    insert(" ")
 
 # TODO: test and consider removing the [output] - should be unnecessary because of below seperate command
-cube get [{user.kubectl_object}] [output] [{user.kubectl_output_format_object}]:
+cube get [{user.kubectl_object}]:
     insert("kubectl get ")
     insert(kubectl_object or "")
-    # requires beta:
-    if kubectl_output_format_object: insert(" -o {kubectl_output_format_object}")
     insert(" ")
 
 output [{user.kubectl_output_format_object}]:
