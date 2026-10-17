@@ -66,12 +66,7 @@ cube {user.kubectl_action} [{user.kubectl_object}]:
     insert(kubectl_object or "")
     insert(" ")
 
-# TODO: test and consider removing the [output] - should be unnecessary because of below seperate command
-cube get [{user.kubectl_object}]:
-    insert("kubectl get ")
-    insert(kubectl_object or "")
-    insert(" ")
-
+# for get commands
 output [{user.kubectl_output_format_object}]:
     insert("-o ")
     insert(kubectl_output_format_object)
