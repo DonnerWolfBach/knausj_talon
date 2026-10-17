@@ -98,6 +98,10 @@ class Actions:
 
     def microphone_next():
         """Select the next microphone in the list
+        TODO: fix bug where the microphones Between the default entry and what is the default are jumped over because setting it to the default
+        makes actions.sound.microphones() return the name of the default, not 'System default'
+        Current dirty fix: skipping over the respective index
+
         """
         microphone_device_list = get_microphone_list()
 
@@ -110,10 +114,9 @@ class Actions:
         # print(f"{idx=}")
         new_microphone_index = idx + 1
 
-        # skip Over the standard advice to avoid bug
+        # dirty fix: skip Over the standard advice to avoid bug
         if new_microphone_index == 1:
             new_microphone_index = 2
-            print("Skipping System Default Microphone to avoid bug in Talon 1.15.0")
 
         #  at the end of the list go back to the star
         if new_microphone_index == len(microphone_device_list):
