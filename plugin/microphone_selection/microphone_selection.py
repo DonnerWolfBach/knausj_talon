@@ -53,7 +53,6 @@ def gui(gui: imgui.GUI):
     gui.text("Click or press a number key to select a microphone")
     gui.text("(or say “microphone pick #”)")
     gui.line()
-    gui.text("Microphone list updates automatically")
     gui.spacer()
     active_microphone = actions.sound.active_microphone()
     microphone_device_list = get_microphone_list()
@@ -119,11 +118,10 @@ class Actions:
             new_microphone_index = 2
 
         #  at the end of the list go back to the star
-        if new_microphone_index == len(microphone_device_list):
+        if new_microphone_index == len(actions.sound.microphones()):
             new_microphone_index = 0
         print(f"{new_microphone_index=}")
         new_microphone_name = microphone_device_list[new_microphone_index]
         result = actions.sound.set_microphone(new_microphone_name)
         print(f"{str(result)=}")
-
 
