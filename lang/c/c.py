@@ -31,7 +31,7 @@ ctx.lists["self.c_keywords"] = {
     "register": "register",
     # actually cpp
     "const expr": "constexpr",
-    "constant expression":"constexpr",
+    "constant expression": "constexpr",
 }
 
 ctx.lists["self.stdint_types"] = {

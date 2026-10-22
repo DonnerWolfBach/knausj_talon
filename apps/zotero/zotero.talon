@@ -13,4 +13,3 @@ item delete: key(delete)
 
 import: key(ctrl-shift-i)
 import clipboard: key(ctrl-shift-alt-i)
-

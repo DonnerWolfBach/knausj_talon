@@ -4,7 +4,7 @@ app.exe: logseq.exe
 
 tag(): user.command_search
 
-card slap: 
+card slap:
     insert(" #card")
     key(enter)
     sleep(500ms)

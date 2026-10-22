@@ -3,9 +3,7 @@
 os: linux
 -
 # krunner
-(ka|k|key) runner: key(alt-space)
-
-
+(ka | k | key) runner: key(alt-space)
 
 desktop grid: key(ctrl-f8)
 

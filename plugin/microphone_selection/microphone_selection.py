@@ -68,16 +68,16 @@ class Actions:
 
     def microphone_next():
         """Select the next microphone in the list
-        TODO: fix bug where the microphones Between the default entry and what is the default are jumped over because setting it to the default 
+        TODO: fix bug where the microphones Between the default entry and what is the default are jumped over because setting it to the default
         makes actions.sound.microphones() return the name of the default, not 'System default'
         """
-        current_microphone_name : str = actions.sound.active_microphone()
+        current_microphone_name: str = actions.sound.active_microphone()
         # print(f"{current_microphone_name=}")
         # print(f"{microphone_device_list=}")
         # use microphone_device_list over actions.sound.microphones for same sorting with gui
-        idx : int = microphone_device_list.index(current_microphone_name)
+        idx: int = microphone_device_list.index(current_microphone_name)
         # print(f"{idx=}")
-        new_microphone_index = idx+1 
+        new_microphone_index = idx + 1
 
         # skip Over the standard advice to avoid bug
         if new_microphone_index == 1:

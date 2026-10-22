@@ -1,5 +1,5 @@
 os: linux
-- 
+-
 # this is for calling spectacle when spectacle is not focused right now
 # spectacle is a kde plasma standout app and may not work on other desktops
 
@@ -14,4 +14,3 @@ os: linux
 # I have "spectacle rectangle" as an alias for grab selection,
 # also see calling_spectacle.py for that
 # ^spectacle rectangle$: key("shift-super-printscr")
-

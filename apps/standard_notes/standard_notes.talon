@@ -6,7 +6,7 @@ settings():
     key_wait = 9.0
 
 tag(): user.command_search
-    
+
 # these two do not work in librewolf for some reason
 note create: key("alt-shift-n")
 tag create: key("ctrl-alt-n")
@@ -14,18 +14,17 @@ tag create: key("ctrl-alt-n")
 focus mode: key("ctrl-shift-f")
 
 # following both standard notes naming and talon standards
-[show|toggle] tags panel [show|toggle]: key("ctrl-shift-e")
-[show|toggle] notes panel [show|toggle]: key("ctrl-shift-l")
+[show | toggle] tags panel [show | toggle]: key("ctrl-shift-e")
+[show | toggle] notes panel [show | toggle]: key("ctrl-shift-l")
 
 # just the name now
 note history: key("ctrl-shift-h")
 editor width: key("ctrl-shift-j")
-change note type:key("ctrl-shift-/")
+change note type: key("ctrl-shift-/")
 
 # different name to avoid overlap with *
 star note: key("ctrl-shift-s")
 pin to top: key("ctrl-shift-p")
 show markdown: key("ctrl-shift-m")
-
 
 # TODO: super notes editor support

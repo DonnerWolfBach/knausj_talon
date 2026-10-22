@@ -4,5 +4,4 @@ start recording:
     # user.clear_subtitles() # does not seem relevant in community/knausj
     user.recording_start()
 
-stop recording:
-    user.recording_stop()
+stop recording: user.recording_stop()

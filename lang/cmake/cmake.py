@@ -11,11 +11,11 @@ code.language: cmake
 """
 
 ctx.lists["user.code_type"] = {
-    "boolean":"BOOL",
+    "boolean": "BOOL",
     "file path": "FILEPATH",
     "path": "PATH",
     "string": "STRING",
-    "internal": "INTERNAL"
+    "internal": "INTERNAL",
 }
 
 
@@ -28,5 +28,3 @@ class UserActions:
         text += f"{selection or ''})"
         actions.user.paste(text)
         actions.edit.left()
-
-

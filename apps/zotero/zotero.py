@@ -10,8 +10,6 @@ and app.name: Zotero
 """
 
 
-
-
 # --- Implement actions ---
 @ctx.action_class("user")
 class user_actions:

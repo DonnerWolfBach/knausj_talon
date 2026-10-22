@@ -4,7 +4,7 @@ and tag: user.git
 git {user.git_command} [<user.git_arguments>]:
     args = git_arguments or ""
     "git {git_command}{args} "
-# I added the $ anchor to prevent commands like "my name" 
+# I added the $ anchor to prevent commands like "my name"
 # to get executed at the end
 # I could do something with "over" if I want to be able to chain it again
 git commit [<user.git_arguments>] message [<user.prose>]$:

@@ -201,9 +201,8 @@ def remove_code_formatting(text: str) -> str:
         return result.lower()
     return text
 
-def transform_to_spongebob_case_alternative(
-    string: str
-) -> str:
+
+def transform_to_spongebob_case_alternative(string: str) -> str:
     """a more concise alternative to the first implementation"""
     print(f"debug: string={string}")
     string = list(string)
@@ -259,7 +258,6 @@ formatter_list = [
     CodeFormatter("ALL_SLASHES", "/", lambda text: f"/{text.lower()}", lower),
     CodeFormatter("DOUBLE_UNDERSCORE", "__", lower, lower),
     CodeFormatter("DOUBLE_COLON_SEPARATED", "::", lower, lower),
-
 ]
 
 formatters_dict = {f.id: f for f in formatter_list}
