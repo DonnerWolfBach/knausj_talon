@@ -118,7 +118,7 @@ class Actions:
             new_microphone_index = 2
 
         #  at the end of the list go back to the star
-        if new_microphone_index == len(actions.sound.microphones()):
+        if new_microphone_index == len(microphone_device_list):
             new_microphone_index = 0
         print(f"{new_microphone_index=}")
         new_microphone_name = microphone_device_list[new_microphone_index]
