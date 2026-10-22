@@ -1,0 +1,15 @@
+os: windows
+and app.exe: /^mstsc\.exe$/
+- 
+
+# this is for remote desktop connections
+# transferring the context does not work, like with vms
+
+#  I'm choosing to just activate the terminal in that case because
+#  that is the most important thing for me
+
+tag(): terminal
+tag(): user.generic_windows_shell
+tag(): user.unix_utilities
+
+tag(): user.git
