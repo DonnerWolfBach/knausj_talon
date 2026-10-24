@@ -7,7 +7,7 @@ settings():
     speech.timeout = 0.5
 
     # Uncomment to enable dark mode for talon help menus
-    imgui.dark_mode = true
+    imgui.dark_mode = false
 
     # If `true`, automatically show the picker GUI when the file manager has focus
     user.file_manager_auto_show_pickers = false
@@ -43,11 +43,11 @@ settings():
     user.mouse_enable_pop_click = 1
 
     # If `true`, use a hissing noise to scroll continuously
-    user.mouse_enable_hiss_scroll = false
+    user.mouse_enable_hiss_scroll = true
 
     # How much time a hiss must last for to be considered a hiss rather than
     # part of speech, in ms
-    user.hiss_scroll_debounce_time = 100
+    user.hiss_scroll_debounce_time = 400
 
     # If `true`, hide the continuous scroll/gaze scroll GUI
     user.mouse_hide_mouse_gui = false
