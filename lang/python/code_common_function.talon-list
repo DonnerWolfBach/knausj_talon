@@ -36,3 +36,9 @@ cron cancel: cron.cancel
 cron interval: cron.interval
 F S watch: fs.watch
 settings get: "settings.get"
+
+# Repl or Repl like functions
+help
+repr
+representation: "repr"
+

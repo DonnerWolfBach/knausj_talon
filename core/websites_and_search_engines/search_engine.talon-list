@@ -10,3 +10,4 @@ startpage: https://www.startpage.com/do/dsearch?query=%s
 dictionary: https://www.linguee.com/english-german/search?source=auto&query=%s
 netherlands: https://www.linguee.com/english-dutch/search?query=%s
 duck: https://duckduckgo.com/?t=ftsa&q=%s&ia=web&kav=1&kn=1
+mistral: https://chat.mistral.ai/chat?q=%s
