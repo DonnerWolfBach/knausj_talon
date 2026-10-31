@@ -257,6 +257,9 @@ preview markdown: user.vscode("markdown.showPreview")
     user.vscode("platformio-ide.serialMonitor")
 (Arduino | Platform [i o]) compile: user.vscode("platformio-ide.build")
 
+bar Platform [io]: user.vscode("workbench.view.extension.platformio")
+
+
 # Foam/Loam/Logfoam
 # TOOD: move somewhere else
 block [reference | anchor | id] [<user.text>] [halt]:
