@@ -1,6 +1,7 @@
 app: signal
 -
 
+# General
 show shortcuts: key("ctrl-/")
 tag(): user.emoji
 
@@ -27,7 +28,7 @@ unarchive chat: key("ctrl-shift-u")
 (last | bottom) message: key("ctrl-down")
 close chat: key("ctrl-shift-c")
 
-# Messages
+# Message actions
 send it: key("enter")
 message details: key("ctrl-d")
 reply [message]: key("ctrl-shift-r")
