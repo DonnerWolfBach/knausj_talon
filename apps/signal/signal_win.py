@@ -10,7 +10,7 @@ app: signal
 @ctx.action_class("user")
 class UserActions:
     def signal_show_shortcuts():
-        actions.key("ctrl-/")
+        actions.key("ctrl-#")
 
     def signal_next_section():
         actions.key("ctrl-t")
