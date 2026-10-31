@@ -1,10 +1,31 @@
-from talon import Context, actions
+from talon import Context, actions, Module
+
+mod = Module()
 
 ctx = Context()
 ctx.matches = r"""
 os: windows
 app: signal
 """
+
+
+@mod.action_class
+class Actions:
+    def find_everywhere(text: str):
+        """"""
+
+        actions.key("ctrl-f")
+
+        if text:
+            actions.insert(text)
+
+@ctx.action_class("edit")
+class EditActions:
+
+    def find(text = None):
+        actions.key("ctrl-shift-f")
+        if text:
+            actions.insert(text)
 
 
 @ctx.action_class("user")
@@ -101,3 +122,5 @@ class UserActions:
 
     def signal_remove_link_attachment():
         actions.key("ctrl-shift-p")
+
+

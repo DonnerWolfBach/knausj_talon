@@ -2,6 +2,7 @@ app: signal
 -
 
 tag(): user.emoji
+tag(): user.find_and_replace
 
 # General
 show shortcuts: user.signal_show_shortcuts()
