@@ -10,3 +10,6 @@
 [submodule "plugin/talon_german"]
 	path = plugin/talon_german
 	url = https://github.com/DonnerWolfBach/talon_german
+[submodule "plugin/beans-talon"]
+	path = plugin/beans-talon
+	url = https://github.com/DonnerWolfBach/beans-talon.git
