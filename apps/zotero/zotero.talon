@@ -1,4 +1,4 @@
-app.name: Zotero
+app.exe: /^zotero\.exe$/
 -
 
 # TODO: add mac support: https://www.zotero.org/support/kb/keyboard_shortcuts
