@@ -78,6 +78,10 @@ os: windows
 and app.exe: /^antigravity\.exe$/i
 os: windows
 and app.exe: /^positron\.exe$/i
+os: windows
+and app.name: TheiaIDE
+os: windows
+and app.exe: /^theiaide\.exe$/i
 """
 
 ctx.matches = r"""
