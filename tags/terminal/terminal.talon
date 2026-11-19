@@ -33,3 +33,7 @@ copy paste:
     edit.paste()
 
 pipe to (clipboard | clip): user.terminal_pipe_to_clipboard()
+
+tree: insert("tree")
+tree files: insert("tree /F") 
+# TODO: generalize beyond powershell
